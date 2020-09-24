@@ -1,22 +1,23 @@
 # home-page
-株式会社OwNのホームページ
 
-## Develop
+## Build Setup
 
-### Install pnpm
+```bash
+# install pnpm
+$ npm i -g pnpm
 
+# install dependencies
+$ pnpm i --shamefully-hoist
+
+# serve with hot reload at localhost:3000
+$ pnpm dev
+
+# build for production and launch server
+$ pnpm build
+$ pnpm start
+
+# generate static project
+$ pnpm generate
 ```
-npm i -g pnpm
-```
 
-### Start dev server
-
-```
-pnpm dev
-```
-
-### Build for production
-
-```
-pnpm build
-```
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
