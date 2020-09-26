@@ -13,9 +13,11 @@
     "lint": "pnpm lint:js"
   },
   "dependencies": {
+    "@iconify/iconify": "^2.0.0-rc.1",
     "@nuxt/content": "^1.9.0",
     "@nuxtjs/pwa": "^3.0.2",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.14.6",
+    "nuxt-i18n": "^6.15.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
@@ -23,6 +25,7 @@
     "@nuxtjs/tailwindcss": "^2.1.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.9.0",
-    "eslint-plugin-nuxt": "^1.0.0"
+    "eslint-plugin-nuxt": "^1.0.0",
+    "nuxt-purge-icons-module": "^0.4.1"
   }
 }
