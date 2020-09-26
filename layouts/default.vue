@@ -1,6 +1,9 @@
 <template>
   <div class="h-screen">
     <Header />
+    <div class="hidden md:block fixed inset-y-0 right-0">
+      <Links />
+    </div>
     <div class="pt-16 h-full overflow-auto">
       <Nuxt />
     </div>
