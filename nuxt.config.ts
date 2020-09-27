@@ -1,5 +1,6 @@
 import { NuxtConfig } from '@nuxt/types'
 import i18n from './nuxt-i18n.config'
+
 const config: NuxtConfig = {
   target: 'static',
   head: {
@@ -20,7 +21,7 @@ const config: NuxtConfig = {
   components: true,
   buildModules: [
     '@nuxt/typescript-build',
-    '@nuxtjs/tailwindcss',
+    '@nuxtjs/tailwindcss'
   ],
   modules: [
     '@nuxtjs/pwa',
@@ -32,11 +33,14 @@ const config: NuxtConfig = {
   build: {
     postcss: {
       plugins: {
-        'autoprefixer': {}
+        autoprefixer: {}
       }
     }
   },
   purgeIcons: {
+  },
+  generate: {
+    fallback: true
   }
 }
 
