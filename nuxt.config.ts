@@ -1,5 +1,6 @@
-import { locales } from './locales'
-export default {
+import { NuxtConfig } from '@nuxt/types'
+import i18n from './nuxt-i18n.config'
+const config: NuxtConfig = {
   target: 'static',
   head: {
     title: process.env.npm_package_name || '',
@@ -18,27 +19,25 @@ export default {
   ],
   components: true,
   buildModules: [
-    '@nuxtjs/eslint-module',
+    '@nuxt/typescript-build',
     '@nuxtjs/tailwindcss'
   ],
   modules: [
     '@nuxtjs/pwa',
     '@nuxt/content',
-    'nuxt-i18n'
+    ['nuxt-i18n', i18n]
   ],
   content: {
   },
   build: {
+    postcss: {
+      plugins: {
+        'autoprefixer': {}
+      }
+    }
   },
   purgeIcons: {
-  },
-  i18n: {
-    langDir: 'locales',
-    strategy: 'prefix_except_default',
-    locales,
-    defaultLocale: 'en',
-    vueI18n: {
-      fallbackLocale: 'en'
-    }
   }
 }
+
+export default config

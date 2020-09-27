@@ -28,8 +28,10 @@
   </nav>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({
   data () {
     return {
       showService: false
@@ -40,7 +42,7 @@ export default {
       this.showService = false
     })
   }
-}
+})
 </script>
 
 <style>

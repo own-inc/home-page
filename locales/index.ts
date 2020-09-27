@@ -1,12 +1,20 @@
 import en from './en.json'
 import ja from './ja.json'
 
+export interface locale {
+  code: string
+  name: string
+  iso: string
+  file: string
+  description: string
+}
+
 export const messages = {
   en,
   ja
 }
 
-export const locales = [{
+export const locales: Array<locale> = [{
   code: 'ja',
   name: '日本語',
   iso: 'ja-JP',

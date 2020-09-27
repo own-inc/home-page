@@ -5,7 +5,7 @@
         <img src="~/assets/logo.svg" alt="Logo">
       </nuxt-link>
       <div class="flex items-center">
-        <nuxt-link v-for="item in navItem" :key="item.link" class="text-md px-2 mx-2" :to="item.link">
+        <nuxt-link v-for="item in navItems" :key="item.link" class="text-md px-2 mx-2" :to="item.link">
           {{ item.title }}
         </nuxt-link>
       </div>
@@ -13,11 +13,18 @@
   </header>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue'
+
+interface link {
+  title: string
+  link: string
+}
+
+export default Vue.extend({
   data () {
     return {
-      navItem: [
+      navItems: [
         {
           title: 'Home',
           link: '/'
@@ -38,10 +45,10 @@ export default {
           title: 'Contact',
           link: '/contact'
         }
-      ]
+      ] as Array<link>
     }
   }
-}
+})
 </script>
 
 <style>
