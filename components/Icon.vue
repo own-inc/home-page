@@ -10,28 +10,27 @@ export default Vue.extend({
   props: {
     icon: {
       type: String,
-      required: true,
-    },
+      required: true
+    }
   },
   watch: {
     icon: {
-      handler() {
+      handler () {
         this.update()
       },
-      immediate: true,
-    },
+      immediate: true
+    }
   },
   methods: {
-    update() {
-      this.$nextTick(async() => {
+    update () {
+      this.$nextTick(() => {
         const el = this.$refs.el as Element
         if (el) {
           const svg = Iconify.renderSVG(this.icon, {})
           if (svg) {
             el.textContent = ''
             el.appendChild(svg)
-          }
-          else {
+          } else {
             const span = document.createElement('span')
             span.className = 'iconify'
             span.dataset.icon = this.icon
@@ -40,8 +39,8 @@ export default Vue.extend({
           }
         }
       })
-    },
-  },
+    }
+  }
 })
 </script>
 
