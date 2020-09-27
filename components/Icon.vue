@@ -2,9 +2,11 @@
   <div ref="el" :class="$attrs.class" style="vertical-align: text-bottom" />
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
+// @ts-ignore
 import Iconify from '@purge-icons/generated'
-export default {
+export default Vue.extend({
   props: {
     icon: {
       type: String,
@@ -22,7 +24,7 @@ export default {
   methods: {
     update () {
       this.$nextTick(() => {
-        const el = this.$refs.el
+        const el = this.$refs.el as Element
         if (el) {
           const svg = Iconify.renderSVG(this.icon, {})
           if (svg) {
@@ -39,7 +41,7 @@ export default {
       })
     }
   }
-}
+})
 </script>
 
 <style>

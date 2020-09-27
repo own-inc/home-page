@@ -7,6 +7,14 @@
 module.exports = {
   theme: {
     extend: {
+      height: {
+        14: '3.5rem',
+        18: '4.5rem'
+      },
+      padding: {
+        14: '3.5rem',
+        18: '4.5rem'
+      },
       animation: {
         appear: '.5s appear;'
       }

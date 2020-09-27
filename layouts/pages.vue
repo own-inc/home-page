@@ -5,7 +5,9 @@
       <Links />
     </div>
     <div class="pt-18 h-full overflow-auto p-6">
-      <Nuxt />
+      <page-contant>
+        <Nuxt />
+      </page-contant>
     </div>
   </div>
 </template>
