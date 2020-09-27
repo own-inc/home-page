@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d31f6951-c113-4077-a440-03e052c99625/deploy-status)](https://app.netlify.com/sites/own-inc/deploys)
+
 # home-page
 
 ## Build Setup
