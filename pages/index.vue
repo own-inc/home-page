@@ -27,7 +27,7 @@
         </nuxt-link>
       </div>
     </div>
-    <div class="absolute bottom-0 right-0 w-full p-10 md:p-20 md:pr-32 z-0 flex justify-end">
+    <div class="absolute bottom-0 right-0 w-full p-10 md:p-20 md:pr-32 flex justify-end">
       <img src="~/assets/image/bro.svg" alt="" class="w-2/3 md:w-2/5 lg:w-1/5">
     </div>
   </div>
