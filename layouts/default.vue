@@ -1,43 +1,11 @@
 <template>
-  <div class="h-screen">
-    <TestNav />
+  <div class="h-screen overflow-hidden">
+    <Header />
     <div class="hidden md:block fixed inset-y-0 right-0">
       <Links />
     </div>
-    <div class="pt-16 h-full overflow-auto">
+    <div class="pt-18 h-full overflow-auto p-6">
       <Nuxt />
     </div>
   </div>
 </template>
-
-<style>
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
-</style>
