@@ -1,6 +1,6 @@
 <template>
   <div class="h-screen">
-    <Header />
+    <TestNav />
     <div class="hidden md:block fixed inset-y-0 right-0">
       <Links />
     </div>
