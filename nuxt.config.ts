@@ -20,7 +20,7 @@ const config: NuxtConfig = {
   components: true,
   buildModules: [
     '@nuxt/typescript-build',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
   ],
   modules: [
     '@nuxtjs/pwa',
