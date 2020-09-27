@@ -1,14 +1,24 @@
 <template>
-  <header>
-    <div class="fixed w-full h-16 flex border-b items-center px-6 justify-between">
-      <nuxt-link class="w-20" to="/">
-        <img src="~/assets/logo.svg" alt="Logo">
-      </nuxt-link>
-      <div class="flex items-center">
-        <nuxt-link v-for="item in navItems" :key="item.link" class="text-md px-2 mx-2" :to="item.link">
-          {{ item.title }}
-        </nuxt-link>
+  <header class="flex-1 fixed w-full z-40">
+    <!-- This example requires Tailwind CSS v1.4.0+ -->
+    <div class="relative bg-white layer-blur">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="flex justify-between items-center border-b border-gray-100 py-6 md:justify-start md:space-x-10">
+          <div class="lg:w-0 lg:flex-1">
+            <logo />
+          </div>
+          <div class="-mr-2 -my-2 md:hidden">
+            <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" @click.stop="showMenu = !showMenu">
+              <!-- Heroicon name: menu -->
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+          <laptop-nav />
+        </div>
       </div>
+      <MobileNav v-show="showMenu" />
     </div>
   </header>
 </template>
@@ -16,40 +26,20 @@
 <script lang="ts">
 import Vue from 'vue'
 
-interface link {
-  title: string
-  link: string
-}
-
 export default Vue.extend({
   data () {
     return {
-      navItems: [
-        {
-          title: 'Home',
-          link: '/'
-        },
-        {
-          title: 'Services',
-          link: '/services'
-        },
-        {
-          title: 'News',
-          link: '/news'
-        },
-        {
-          title: 'About',
-          link: '/about'
-        },
-        {
-          title: 'Contact',
-          link: '/contact'
-        }
-      ] as Array<link>
+      showMenu: false
     }
+  },
+  mounted () {
+    window.addEventListener('click', () => {
+      this.showMenu = false
+    })
   }
 })
 </script>
 
 <style>
+
 </style>

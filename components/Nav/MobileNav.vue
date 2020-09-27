@@ -12,11 +12,9 @@
   <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
     <div class="rounded-lg shadow-lg">
       <div class="rounded-lg shadow-xs bg-white divide-y-2 divide-gray-50">
-        <div class="py-4 px-5 space-y-6">
+        <div class="py-4 px-5">
           <div class="flex items-center justify-between">
-            <div>
-              <img class="h- w-auto" src="~/assets/logo.svg" alt="OwN">
-            </div>
+            <logo />
             <div class="-mr-2">
               <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-300 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-300 transition duration-150 ease-in-out">
                 <!-- Heroicon name: x -->
@@ -26,9 +24,9 @@
               </button>
             </div>
           </div>
-          <div>
+          <div class="my-6">
             <nav class="grid gap-y-8">
-              <a href="#" class="-m-3 p-3 flex items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
+              <nuxt-link class="-m-3 p-3 flex items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150" to="/services">
                 <!-- Heroicon name: chart-bar -->
                 <svg class="flex-shrink-0 h-6 w-6 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -36,7 +34,7 @@
                 <div class="text-base leading-6 font-medium text-gray-900">
                   Services
                 </div>
-              </a>
+              </nuxt-link>
               <a href="#" class="-m-3 p-3 flex items-center space-x-3 rounded-md hover:bg-gray-50 transition ease-in-out duration-150">
                 <!-- Heroicon name: cursor-click -->
                 <svg class="flex-shrink-0 h-6 w-6 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
