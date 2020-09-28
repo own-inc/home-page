@@ -1,7 +1,5 @@
 <template>
-  <div class="flex justify-center items-center">
-    <h1>About</h1>
-  </div>
+  <page-contant title="About" /></page-contant>
 </template>
 
 <script lang="ts">
