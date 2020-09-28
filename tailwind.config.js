@@ -9,11 +9,13 @@ module.exports = {
     extend: {
       height: {
         14: '3.5rem',
-        18: '4.5rem'
+        18: '4.5rem',
+        22: '5.5rem'
       },
       padding: {
         14: '3.5rem',
-        18: '4.5rem'
+        18: '4.5rem',
+        22: '5.5rem'
       },
       animation: {
         appear: '.5s appear;'
