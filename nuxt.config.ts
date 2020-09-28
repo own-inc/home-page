@@ -1,8 +1,6 @@
 import { NuxtConfig } from '@nuxt/types'
 import i18n from './nuxt-i18n.config'
 
-const autoprefixer = require('autoprefixer')
-
 const config: NuxtConfig = {
   mode: 'universal',
   target: 'static',
@@ -14,7 +12,7 @@ const config: NuxtConfig = {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
     ]
   },
   css: [
@@ -34,11 +32,7 @@ const config: NuxtConfig = {
   content: {
   },
   build: {
-    postcss: {
-      plugins: [
-        autoprefixer()
-      ]
-    }
+    postcss: {}
   },
   purgeIcons: {
   },
