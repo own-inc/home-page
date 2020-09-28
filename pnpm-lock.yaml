@@ -12,11 +12,10 @@ devDependencies:
   '@nuxtjs/eslint-config-typescript': 2.0.0_eslint@7.10.0+typescript@4.0.3
   '@nuxtjs/eslint-module': 2.0.0_eslint@7.10.0
   '@nuxtjs/tailwindcss': 3.1.0
-  autoprefixer: 9.8.6
   babel-eslint: 10.1.0_eslint@7.10.0
   eslint: 7.10.0
   eslint-plugin-nuxt: 1.0.0_eslint@7.10.0
-  nuxt-purge-icons-module: 0.4.1
+  nuxt-purge-icons-module: 0.4.2
   typescript: 4.0.3
 lockfileVersion: 5.1
 packages:
@@ -6870,13 +6869,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-LWKfr1B6JWhXYEpM5iHXJ2kyXMyH7RiHLbAHTVWV6PoRFwHgaFAPC9juq6Uis/SLxKwojP2QOmwfZYep8Uk+Dw==
-  /nuxt-purge-icons-module/0.4.1:
+  /nuxt-purge-icons-module/0.4.2:
     dependencies:
       '@purge-icons/generated': 0.4.1
-      purge-icons-webpack-plugin: 0.4.1
+      purge-icons-webpack-plugin: 0.4.2
     dev: true
     resolution:
-      integrity: sha512-BcfQUiDDAPTqUD578PYXNPD6ATt7D6QVp4uAjZf69VrM0mh8iNroSEqiNqg36N3fVl5CdTKlxPtzFSIxF5xW6A==
+      integrity: sha512-0QnwWrDLQRQ46xYO/Uvi6FRbpQIpDYpzGWw5gbYP/dfOLTDAirvWi/mE0RrljRBUWCgB828WjW3zHfzDvl/RLQ==
   /nuxt/2.14.6:
     dependencies:
       '@nuxt/builder': 2.14.6
@@ -8295,14 +8294,16 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
-  /purge-icons-webpack-plugin/0.4.1:
+  /purge-icons-webpack-plugin/0.4.2:
     dependencies:
       '@purge-icons/core': 0.4.1
       '@purge-icons/generated': 0.4.1
       webpack-virtual-modules: 0.3.1
     dev: true
+    engines:
+      node: '>= 12'
     resolution:
-      integrity: sha512-tbe7u2lRe0HcxmTc7srPlo4bpzkRwSYxA0rQZCsH8500e0Cj10AChU3dqy4K6WVWA17UihlyNojbixDy0aU/IQ==
+      integrity: sha512-kf6utjDYxRER84xgVBngBicbJjXhrjkWwQ35rFcgexFyLEla8HyrlP2izpWXzZL7LMqyb0ogZyiOAXGVDzOQLQ==
   /purgecss/2.3.0:
     dependencies:
       commander: 5.1.0
@@ -10566,11 +10567,10 @@ specifiers:
   '@nuxtjs/eslint-module': ^2.0.0
   '@nuxtjs/pwa': ^3.0.2
   '@nuxtjs/tailwindcss': ^3.1.0
-  autoprefixer: ^9.8.6
   babel-eslint: ^10.1.0
   eslint: ^7.10.0
   eslint-plugin-nuxt: ^1.0.0
   nuxt: ^2.14.6
   nuxt-i18n: ^6.15.1
-  nuxt-purge-icons-module: ^0.4.1
+  nuxt-purge-icons-module: ^0.4.2
   typescript: ^4.0.3
