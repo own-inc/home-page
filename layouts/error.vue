@@ -23,6 +23,16 @@ export default Vue.extend({
         return { statusCode: 404 }
       }
     }
+  },
+  head () {
+    const baseUrl = process.env.baseUrl
+    const { path } = this.$router
+    const pathWithSlash = path.endsWith('/') ? path : `${path}/`
+    return {
+      link: [
+        { rel: 'canonical', href: `${baseUrl}${pathWithSlash}` }
+      ]
+    }
   }
 })
 </script>
