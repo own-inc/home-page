@@ -4,8 +4,14 @@
 
 <script lang="ts">
 import Vue from 'vue'
-export default Vue.extend({
+import { MetaInfo } from 'vue-meta'
 
+export default Vue.extend({
+  head (): MetaInfo {
+    return {
+      title: 'News'
+    }
+  }
 })
 </script>
 

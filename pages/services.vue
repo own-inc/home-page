@@ -64,6 +64,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { MetaInfo } from 'vue-meta'
 
 export default Vue.extend({
   data () {
@@ -85,6 +86,11 @@ export default Vue.extend({
           image: require('~/assets/image/computer.svg')
         }
       ]
+    }
+  },
+  head (): MetaInfo {
+    return {
+      title: 'About'
     }
   }
 })
