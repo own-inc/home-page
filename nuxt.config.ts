@@ -2,7 +2,7 @@ import { NuxtConfig } from '@nuxt/types'
 import i18n from './nuxt-i18n.config'
 
 const config: NuxtConfig = {
-  mode: 'universal',
+  ssr: false,
   target: 'static',
   head: {
     titleTemplate: c => c ? `${c} | OwN Inc.` : 'OwN Inc. - own-auth.io',
