@@ -10,7 +10,7 @@ export default Vue.extend({
   props: {
     to: {
       type: String,
-      default: '/#top'
+      default: '/'
     }
   }
 })
