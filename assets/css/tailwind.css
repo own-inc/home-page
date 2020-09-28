@@ -18,6 +18,10 @@
   @apply border-gray-700 text-gray-700;
 }
 
+.btn:focus {
+  @apply border-teal-500;
+}
+
 .btn-teal:hover {
   @apply bg-teal-400 text-white;
 }
