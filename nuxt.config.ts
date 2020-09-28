@@ -5,11 +5,11 @@ const config: NuxtConfig = {
   mode: 'universal',
   target: 'static',
   head: {
-    title: process.env.npm_package_name || '',
+    titleTemplate: c => c ? `${c} | OwN Inc.` : 'OwN Inc. - own-auth.io',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'We are a tech company that build Web application, Smartphone Apps, Corporate website or Landing page, we also run our own auth service OwN Auth.' }
     ],
     link: [
       { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
@@ -38,6 +38,9 @@ const config: NuxtConfig = {
   },
   generate: {
     fallback: true
+  },
+  router: {
+    trailingSlash: true
   }
 }
 
