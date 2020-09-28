@@ -17,7 +17,7 @@ import Vue from 'vue'
 export default Vue.extend({
   head () {
     const baseUrl = process.env.baseUrl
-    const { path } = this.$router
+    const { path } = this.$route
     const pathWithSlash = path.endsWith('/') ? path : `${path}/`
     return {
       link: [
