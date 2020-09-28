@@ -1,7 +1,7 @@
 <template>
-  <a :href="to" :class="$attrs.class">
+  <nuxt-link :to="to" :class="$attrs.class">
     <img class="h-6 w-auto sm:h-8" src="~/assets/logo.svg" alt="OwN">
-  </a>
+  </nuxt-link>
 </template>
 
 <script lang="ts">
