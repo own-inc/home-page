@@ -1,7 +1,10 @@
 import { NuxtConfig } from '@nuxt/types'
 import i18n from './nuxt-i18n.config'
 
+const autoprefixer = require('autoprefixer')
+
 const config: NuxtConfig = {
+  mode: 'universal',
   target: 'static',
   head: {
     title: process.env.npm_package_name || '',
@@ -32,9 +35,9 @@ const config: NuxtConfig = {
   },
   build: {
     postcss: {
-      plugins: {
-        autoprefixer: {}
-      }
+      plugins: [
+        autoprefixer()
+      ]
     }
   },
   purgeIcons: {
