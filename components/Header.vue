@@ -3,7 +3,7 @@
     <!-- This example requires Tailwind CSS v1.4.0+ -->
     <div class="relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="flex justify-between items-center border-b border-gray-100 py-6 md:space-x-10">
+        <div class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:space-x-10">
           <div>
             <logo />
           </div>
@@ -15,10 +15,10 @@
               </svg>
             </button>
           </div>
-          <laptop-nav />
+          <laptop-nav :nav-items="navItems" />
         </div>
       </div>
-      <MobileNav v-show="showMenu" />
+      <mobile-nav v-show="showMenu" />
     </div>
   </header>
 </template>
@@ -29,7 +29,29 @@ import Vue from 'vue'
 export default Vue.extend({
   data () {
     return {
-      showMenu: false
+      showMenu: false,
+      navItems: [
+        {
+          title: 'Services',
+          link: '/services/',
+          icon: ''
+        },
+        {
+          title: 'News',
+          link: '/news/',
+          icon: ''
+        },
+        {
+          title: 'About',
+          link: '/about/',
+          icon: ''
+        },
+        {
+          title: 'Contact',
+          link: '/contact',
+          icon: ''
+        }
+      ]
     }
   },
   mounted () {
