@@ -5,7 +5,7 @@
       <div class="w-6 h-6 rounded-full bg-teal-300 -mt-1" />
     </div>
     <h1 class="text-2xl font-light mt-2">
-      Service
+      {{ title }}
     </h1>
     <div class="w-full mt-6">
       <slot />
@@ -16,7 +16,12 @@
 <script lang="ts">
 import Vue from 'vue'
 export default Vue.extend({
-
+  props: {
+    title: {
+      type: String,
+      default: 'Title'
+    }
+  }
 })
 </script>
 
