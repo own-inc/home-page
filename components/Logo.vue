@@ -1,7 +1,7 @@
 <template>
-  <nuxt-link :to="to" class="flex" :class="$attrs.class">
+  <a :href="to" :class="$attrs.class">
     <img class="h-6 w-auto sm:h-8" src="~/assets/logo.svg" alt="OwN">
-  </nuxt-link>
+  </a>
 </template>
 
 <script lang="ts">
@@ -10,7 +10,7 @@ export default Vue.extend({
   props: {
     to: {
       type: String,
-      default: '/'
+      default: '/#top'
     }
   }
 })

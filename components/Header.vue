@@ -1,10 +1,10 @@
 <template>
-  <header class="flex-1 fixed w-full z-40">
+  <header class="flex-1 fixed w-full z-50 layer-blur">
     <!-- This example requires Tailwind CSS v1.4.0+ -->
-    <div class="relative bg-white layer-blur">
+    <div class="relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="flex justify-between items-center border-b border-gray-100 py-6 md:justify-start md:space-x-10">
-          <div class="lg:w-0 lg:flex-1">
+        <div class="flex justify-between items-center border-b border-gray-100 py-6 md:space-x-10">
+          <div>
             <logo />
           </div>
           <div class="-mr-2 -my-2 md:hidden">
