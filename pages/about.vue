@@ -6,8 +6,10 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { MetaInfo } from 'vue-meta'
+
 export default Vue.extend({
-  head () {
+  head (): MetaInfo {
     return {
       title: 'About'
     }
