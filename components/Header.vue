@@ -58,7 +58,7 @@ export default Vue.extend({
         },
         {
           title: 'Contact',
-          link: '/contact',
+          link: '/contact/',
           icon: ''
         }
       ]
