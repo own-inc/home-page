@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col md:flex-row h-full md:w-3/4 relative justify-center md:items-center mx-auto py-8 md:pb-16">
+  <section class="flex flex-col md:flex-row md:h-full md:w-3/4 relative justify-center md:items-center mx-auto py-8 md:pb-22">
     <div class="flex flex-col w-full items-start m-none md:pb-32">
       <h1 class="text-5xl md:text-6xl font-semibold">
         技術で課題をブチ破る
