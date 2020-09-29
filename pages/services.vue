@@ -37,24 +37,10 @@
             OwN Development Service
           </h2>
         </div>
-        <div class="flex flex-col md:flex-row md:w-4/5 mx-auto">
-          <div v-for="(item, index) in devServices" :key="index" class="flex flex-col space-y-4 items-center mt-6">
-            <div>
-              <img :src="item.image" alt="Build Web" class="h-48">
-            </div>
-            <div class="text-left text-sm px-6">
-              <h4 class="text-xl">
-                {{ item.title }}
-              </h4>
-              <p class="mt-2">
-                {{ item.context }}
-              </p>
-            </div>
-          </div>
-        </div>
+        <services-list :services="devServices" />
       </div>
-      <div class="w-full md:w-auto p-6">
-        <button class="px-8 btn w-full">
+      <div class="w-full md:w-auto p-3">
+        <button class="btn w-full">
           お問い合わせはこちらから
         </button>
       </div>
