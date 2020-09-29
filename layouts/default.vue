@@ -9,6 +9,7 @@
         <Nuxt />
       </main>
     </div>
+    <copyright />
   </div>
 </template>
 
