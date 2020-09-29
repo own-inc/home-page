@@ -4,12 +4,14 @@
     <div class="hidden md:block fixed inset-y-0 right-0 z-40">
       <Links />
     </div>
-    <div class="h-full pt-18 md:pt-22 z-0">
-      <main class="h-full overflow-auto p-6">
+    <div class="h-full pt-18 md:pt-22 z-0 overflow-auto flex flex-col">
+      <main class="flex-auto p-6">
         <Nuxt />
       </main>
+      <footer class="-mt-10">
+        <copyright />
+      </footer>
     </div>
-    <copyright />
   </div>
 </template>
 
