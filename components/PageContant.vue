@@ -1,6 +1,6 @@
 <template>
   <section :id="$attrs.id" class="flex flex-col items-center min-h-full">
-    <div class="w-full flex flex-col items-center -mt-6">
+    <div class="w-full flex flex-col items-center">
       <div class="w-px h-14 bg-teal-400" />
       <div class="w-6 h-6 rounded-full bg-teal-400 -mt-1" />
     </div>
