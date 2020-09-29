@@ -25,14 +25,7 @@ export default Vue.extend({
     }
   },
   head () {
-    const baseUrl = process.env.baseUrl
-    const { path } = this.$route
-    const pathWithSlash = path.endsWith('/') ? path : `${path}/`
-    return {
-      link: [
-        { rel: 'canonical', href: `${baseUrl}${pathWithSlash}` }
-      ]
-    }
+    return this.$nuxtI18nSeo()
   }
 })
 </script>
