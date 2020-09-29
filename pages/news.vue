@@ -6,7 +6,6 @@
         Read More
       </button>
     </div>
-    <news-letter />
   </page-contant>
 </template>
 
