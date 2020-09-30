@@ -14,17 +14,19 @@ export const messages = {
   ja
 }
 
-export const locales: Array<locale> = [{
-  code: 'ja',
-  name: '日本語',
-  iso: 'ja-JP',
-  file: 'ja.json',
-  description: 'Japanese'
-},
-{
-  code: 'en',
-  name: 'English',
-  iso: 'en-US',
-  file: 'en.json',
-  description: 'English'
-}]
+export const locales: Array<locale> = [
+  {
+    code: 'ja',
+    name: '日本語',
+    iso: 'ja-JP',
+    file: 'ja.json',
+    description: 'Japanese'
+  },
+  {
+    code: 'en',
+    name: 'English',
+    iso: 'en-US',
+    file: 'en.json',
+    description: 'English'
+  }
+]

@@ -1,1 +1,31 @@
-{}
+{
+  "header": {
+    "nav": {
+      "services": "サービス",
+      "news": "ニュース",
+      "about": "会社情報",
+      "contact": "連絡"
+    },
+    "auth": {
+      "sign-in": "ログイン",
+      "sign-up": "登録"
+    }
+  },
+  "homepage": {
+    "meta": {
+      "title": "Home",
+      "description": "We are a tech company that build Web application, Smartphone Apps, Corporate website or Landing page, we also run our own auth service OwN Auth."
+    },
+    "main": {
+      "title": "技術で課題をブチ破る",
+      "subtitle": "Webアプリケーション、スマートフォンアプリ、企業Webサイト、またはランディングページを開発しています、他には自社開発の OwN Auth 認証サービス。",
+      "checkService": "私たちのサービス"
+    }
+  },
+  "newsletter": {
+    "title": "OwN Newsletter",
+    "subtitle": "OwNのニュースレターを購読して限定情報を手に入れましょう！",
+    "subscribe-btn": "すぐに購読",
+    "privacy-policy": "利用規約・プライバシーポリシー"
+  }
+}

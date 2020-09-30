@@ -3,21 +3,21 @@
     <div class="flex flex-col max-w-screen-sm mx-auto">
       <div class="w-full text-center">
         <h4 class="text-xl md:text-3xl font-light">
-          OwN Newsletter
+          {{ $t('newsletter.title') }}
         </h4>
         <p class="text-gray-300 mt-4">
-          OwNのニュースレターを購読して限定情報を手に入れましょう
+          {{ $t('newsletter.subtitle') }}
         </p>
       </div>
       <div class="flex flex-col mt-8 text-sm md:text-lg">
         <div class="flex h-12 space-x-6">
           <input type="email" class="flex-auto text-gray-500 px-3 py-2 rounded-lg hover:border-2 border focus:outline-none" placeholder="E-Mailアドレスを入力してください">
           <TheButton>
-            すぐに購読
+            {{ $t('newsletter.subscribe-btn') }}
           </TheButton>
         </div>
         <a href="#" class="text-xs self-end mt-4 text-gray-300 hover:text-gray-500">
-          利用規約・プライバシーポリシー
+          {{ $t('newsletter.privacy-policy') }}
         </a>
       </div>
     </div>

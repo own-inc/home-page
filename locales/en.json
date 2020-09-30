@@ -1,1 +1,31 @@
-{}
+{
+  "header": {
+    "nav": {
+      "services": "Services",
+      "news": "News",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "auth": {
+      "sign-in": "Sign in",
+      "sign-up": "Sign up"
+    }
+  },
+  "homepage": {
+    "meta": {
+      "title": "Home",
+      "description": "We are a tech company that build Web application, Smartphone Apps, Corporate website or Landing page, we also run our own auth service OwN Auth."
+    },
+    "main": {
+      "title": "Breaking through challenges with technology",
+      "subtitle": "Develop Web application, Smartphone Apps, Corporate website or Landing page, we also run our own auth service OwN Auth.",
+      "checkService": "Check our services"
+    }
+  },
+  "newsletter": {
+    "title": "OwN Newsletter",
+    "subtitle": "Subscribe to the OwN newsletter for exclusive information!",
+    "subscribe-btn": "Subscribe now",
+    "privacy-policy": "Terms of Use, Privacy Policy."
+  }
+}
