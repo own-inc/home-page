@@ -11,10 +11,10 @@
       </div>
       <div class="flex flex-col mt-8 text-sm md:text-lg">
         <div class="flex h-12 space-x-6">
-          <input type="email" class="flex-auto text-gray-500 px-3 py-2 rounded-lg hover:border-2 border" placeholder="E-Mailアドレスを入力してください">
-          <button class=" text-white bg-none px-4 py-2 border border-teal-400 bg-teal-400 rounded-md hover:bg-transparent hover:text-teal-400">
+          <input type="email" class="flex-auto text-gray-500 px-3 py-2 rounded-lg hover:border-2 border focus:outline-none" placeholder="E-Mailアドレスを入力してください">
+          <TheButton>
             すぐに購読
-          </button>
+          </TheButton>
         </div>
         <a href="#" class="text-xs self-end mt-4 text-gray-300 hover:text-gray-500">
           利用規約・プライバシーポリシー
