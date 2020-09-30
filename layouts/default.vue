@@ -1,7 +1,7 @@
 <template>
   <div>
     <TheHeader />
-    <main class="p-6 pt-18 md:pt-22">
+    <main class="pt-18 md:pt-22">
       <Nuxt />
     </main>
     <TheFooter />

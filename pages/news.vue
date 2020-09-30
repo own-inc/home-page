@@ -1,5 +1,5 @@
 <template>
-  <page-contant title="News">
+  <page-contant title="News" class="p-4">
     <news-list :news="newsData" />
     <div class="w-full flex justify-center mt-12">
       <button class="btn">

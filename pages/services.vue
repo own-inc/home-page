@@ -1,5 +1,5 @@
 <template>
-  <page-contant title="Services">
+  <page-contant title="Services" class="p-4">
     <div class="flex flex-col items-center space-y-8 md:space-y-16 pb-6">
       <div class="flex flex-col space-y-6 md:space-y-12">
         <div class="text-center">
