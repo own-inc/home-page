@@ -22,6 +22,7 @@ const config: NuxtConfig = {
   components: true,
   buildModules: [
     '@nuxt/typescript-build',
+    '@nuxtjs/svg',
     '@nuxtjs/tailwindcss'
   ],
   modules: [
