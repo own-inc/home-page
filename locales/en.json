@@ -23,6 +23,41 @@
       "checkService": "Check our services"
     }
   },
+  "services-page": {
+    "title": "Services",
+    "login-service": {
+      "title": "OwN Social Login Service",
+      "subtitle": "Combine all accounts into one.",
+      "content": {
+        "1": "When using services linked to SNS,",
+        "2": "\"Which account did I log in with ???\"",
+        "3": "Did you have that kind of experience?",
+        "4": "We will solve that problem!"
+      },
+      "btn": {
+        "coming-soon": "Coming soon..."
+      }
+    },
+    "dev-services": {
+      "title": "OwN Development Service",
+      "subtitle": "Put your ideas into shape",
+      "web": {
+        "title": "Web application",
+        "content": "We create various web applications such as EC sites, information retrieval systems, and business web systems."
+      },
+      "app": {
+        "title": "Smartphone app",
+        "content": "We will propose according to the customer from planning, UI design, application development, backend development."
+      },
+      "lp": {
+        "title": "LP, Corporate Page",
+        "content": "We will propose and create the most suitable website according to your service content and budget."
+      },
+      "btn": {
+        "contact": "Contact Us"
+      }
+    }
+  },
   "newsletter": {
     "title": "OwN Newsletter",
     "subtitle": "Subscribe to the OwN newsletter for exclusive information!",

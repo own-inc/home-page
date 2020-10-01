@@ -23,6 +23,41 @@
       "checkService": "私たちのサービス"
     }
   },
+  "services-page": {
+    "title": "サービス",
+    "login-service": {
+      "title": "OwN Social Login Service",
+      "subtitle": "全てのアカウントを一つにまとめる",
+      "content": {
+        "1": "SNS連携したサービスを使う時、",
+        "2": "「あれ、どのアカウントでログインしてたっけ？」",
+        "3": "という経験ありませんか？",
+        "4": "その問題、私たちが解決します！"
+      },
+      "btn": {
+        "coming-soon": "Coming soon..."
+      }
+    },
+    "dev-services": {
+      "title": "OwN Development Service",
+      "subtitle": "お客様のアイディアを形に",
+      "web": {
+        "title": "Webアプリケーション",
+        "content": "ECサイトや情報検索システム、業務用Webシステムなど様々なWebアプリケーションを作成致します。"
+      },
+      "app": {
+        "title": "スマートフォンアプリ",
+        "content": "企画、UIデザイン、アプリ開発、バックエンド開発までお客様に合わせてご提案させていただきます。"
+      },
+      "lp": {
+        "title": "LP,コーポレートページ",
+        "content": "お客様のサービス内容や予算に合わせて最適なWebサイトをご提案・作成致します。"
+      },
+      "btn": {
+        "contact": "お問い合わせはこちらから"
+      }
+    }
+  },
   "newsletter": {
     "title": "OwN Newsletter",
     "subtitle": "OwNのニュースレターを購読して限定情報を手に入れましょう！",
