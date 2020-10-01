@@ -23,16 +23,18 @@ export default Vue.extend({
   },
   methods: {
     update () {
+      if (!process.static) { return }
       this.$nextTick(() => {
         const el = this.$refs.el as Element
         if (el) {
-          const svg = Iconify.renderSVG(this.icon, {})
+          // @ts-ignore
+          const svg = Iconify.default.renderSVG(this.icon, {})
           if (svg) {
             el.textContent = ''
             el.appendChild(svg)
           } else {
             const span = document.createElement('span')
-            span.className = 'iconify'
+            span.className = 'iconify w-full'
             span.dataset.icon = this.icon
             el.textContent = ''
             el.appendChild(span)

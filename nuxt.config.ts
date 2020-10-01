@@ -2,7 +2,6 @@ import { NuxtConfig } from '@nuxt/types'
 import i18n from './nuxt-i18n.config'
 
 const config: NuxtConfig = {
-  ssr: true,
   target: 'static',
   head: {
     titleTemplate: c => c ? `${c} | OwN Inc.` : 'OwN Inc. - own-auth.io',
@@ -25,7 +24,8 @@ const config: NuxtConfig = {
   buildModules: [
     '@nuxt/typescript-build',
     '@nuxtjs/svg',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    'nuxt-purge-icons-module'
   ],
   modules: [
     '@nuxtjs/pwa',
