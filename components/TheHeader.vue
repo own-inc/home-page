@@ -26,7 +26,7 @@
           </div>
         </div>
       </div>
-      <mobile-nav v-show="showMenu" />
+      <mobile-nav v-show="showMenu" :nav-items="navItems" />
     </div>
   </header>
 </template>
@@ -42,22 +42,22 @@ export default Vue.extend({
         {
           title: this.$t('header.nav.services'),
           link: '/services/',
-          icon: ''
+          icon: 'bx:bxl-dev-to'
         },
         {
           title: this.$t('header.nav.news'),
           link: '/news/',
-          icon: ''
+          icon: 'bx:bx-news'
         },
         {
           title: this.$t('header.nav.about'),
           link: '/about/',
-          icon: ''
+          icon: 'bx:bx-building'
         },
         {
           title: this.$t('header.nav.contact'),
           link: '/contact/',
-          icon: ''
+          icon: 'bx:bx-comment-detail'
         }
       ]
     }
