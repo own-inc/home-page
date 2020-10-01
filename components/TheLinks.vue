@@ -1,21 +1,34 @@
 <template>
-  <aside class="hidden md:flex fixed inset-y-0 right-0 z-40 flex-col pr-8 justify-center h-full space-y-8">
-    <a class="w-10 hover:text-teal-300" href="https://github.com/own-inc" target="_blank">
+  <aside class="hidden md:flex fixed inset-y-0 right-0 z-40 flex-col pr-8 justify-center h-full space-y-8 text-4xl">
+    <a class="hover:text-teal-300" href="https://github.com/own-inc" target="_blank">
       <Icon icon="bx:bxl-github" />
     </a>
-    <a class="w-10 hover:text-teal-300" href="https://twitter.com/own_id" target="_blank">
+    <a class="hover:text-teal-300" href="https://twitter.com/own_id" target="_blank">
       <Icon icon="bx:bxl-twitter" />
     </a>
-    <a class="w-10 hover:text-teal-300" href="/" target="_blank">
+    <a class="hover:text-teal-300" href="/" target="_blank">
       <Icon icon="bx:bx-mail-send" />
     </a>
+    <nuxt-link
+      v-for="locale in availableLocales"
+      :key="locale.code"
+      :to="switchLocalePath(locale.code)"
+    >
+      <Icon icon="clarity:language-line" />
+    </nuxt-link>
   </aside>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  computed: {
+    availableLocales () {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    }
+  }
+})
 </script>
 
 <style>
