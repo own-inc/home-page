@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col md:flex-row md:w-3/4 relative justify-center mx-auto py-8 md:py-24 xl:py-32 p-4">
+  <section class="flex flex-col md:flex-row md:w-3/4 relative mx-auto py-8 md:py-24 xl:py-32 p-4 min-h-screen">
     <div class="flex flex-col w-full items-start m-none">
       <h1 class="text-5xl xl:text-6xl font-semibold leading-tight">
         {{ $t('homepage.main.title') }}
