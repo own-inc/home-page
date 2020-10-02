@@ -4,7 +4,6 @@
 
 <script lang="ts">
 import Vue from 'vue'
-// @ts-ignore
 import Iconify from '@purge-icons/generated'
 export default Vue.extend({
   props: {
@@ -27,7 +26,6 @@ export default Vue.extend({
       this.$nextTick(() => {
         const el = this.$refs.el as Element
         if (el) {
-          // @ts-ignore
           const svg = Iconify.default.renderSVG(this.icon, {})
           if (svg) {
             el.textContent = ''
