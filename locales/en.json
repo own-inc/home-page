@@ -92,6 +92,7 @@
   "newsletter": {
     "title": "OwN Newsletter",
     "subtitle": "Subscribe to the OwN newsletter for exclusive information!",
+    "enter-email": "Please enter your email address",
     "subscribe-btn": "Subscribe now",
     "privacy-policy": "Terms of Use, Privacy Policy."
   }

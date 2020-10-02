@@ -12,7 +12,7 @@
       </div>
       <div class="flex flex-col mt-8 text-sm md:text-lg">
         <div class="flex h-12 space-x-6">
-          <input type="email" class="flex-auto text-gray-500 px-3 py-2 rounded-lg hover:border-2 border focus:outline-none" placeholder="E-Mailアドレスを入力してください">
+          <input type="email" class="flex-auto text-gray-500 px-3 py-2 rounded-lg hover:border-2 border focus:outline-none" :placeholder="$t('newsletter.enter-email')">
           <TheButton>
             {{ $t('newsletter.subscribe-btn') }}
           </TheButton>

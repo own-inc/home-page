@@ -92,6 +92,7 @@
   "newsletter": {
     "title": "OwN Newsletter",
     "subtitle": "OwNのニュースレターを購読して限定情報を手に入れましょう！",
+    "enter-email": "E-Mailアドレスを入力してください",
     "subscribe-btn": "すぐに購読",
     "privacy-policy": "利用規約・プライバシーポリシー"
   }
