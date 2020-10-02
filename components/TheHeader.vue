@@ -37,8 +37,12 @@ import Vue from 'vue'
 export default Vue.extend({
   data () {
     return {
-      showMenu: false,
-      navItems: [
+      showMenu: false
+    }
+  },
+  computed: {
+    navItems () {
+      return [
         {
           title: this.$t('header.nav.services'),
           link: '/services/',
