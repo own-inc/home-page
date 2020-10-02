@@ -74,6 +74,9 @@ export default Vue.extend({
 })
 </script>
 
-<style>
-
+<style scoped>
+.layer-blur {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
 </style>

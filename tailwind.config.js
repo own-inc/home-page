@@ -18,7 +18,12 @@ module.exports = {
         22: '5.5rem'
       },
       animation: {
-        appear: '.5s appear;'
+        appear: 'appear 0.5s'
+      },
+      keyframes: {
+        appear: {
+          '0%': { opacity: 0 }
+        }
       }
     }
   },

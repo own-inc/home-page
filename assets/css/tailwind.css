@@ -1,3 +1,19 @@
+/* purgecss start ignore */
 @import 'tailwindcss/base';
+/* purgecss end ignore */
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+/* purgecss start ignore */
+.btn-bk {
+  @apply px-4 py-2 border border-black rounded-md;
+}
+
+.btn-bk:hover {
+  @apply border-gray-700 text-gray-700;
+}
+
+.btn-bk:focus {
+  @apply border-teal-500;
+}
+/*! purgecss end ignore */
