@@ -4,8 +4,8 @@
       <div>
         <img :src="item.image" alt="Build Web" class="h-48">
       </div>
-      <div class="text-left text-sm px-3">
-        <h4 class="text-xl">
+      <div class="text-left px-3">
+        <h4 class="text-xl md:text-2xl">
           {{ item.title }}
         </h4>
         <p class="mt-2">
