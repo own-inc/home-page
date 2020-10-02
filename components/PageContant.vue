@@ -7,7 +7,7 @@
     <h1 class="text-3xl font-light mt-2">
       {{ title }}
     </h1>
-    <div class="flex-auto w-full mt-6 md:pb-22">
+    <div class="flex-auto w-full mt-6">
       <slot />
     </div>
   </section>
