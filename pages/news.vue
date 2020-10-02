@@ -1,5 +1,5 @@
 <template>
-  <page-contant :title="$t('news-page.title')" class="px-4">
+  <page-contant :title="$t('news-page.title')" class="px-4 pb-12 min-h-screen">
     <news-list :news="newsData" />
     <div class="w-full flex justify-center mt-12">
       <button class="btn">

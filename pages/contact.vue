@@ -1,7 +1,10 @@
 <template>
-  <page-contant title="Contact">
-    <div class="relative flex h-full w-full">
-      <div class="absolute box" />
+  <page-contant :title="$t('contact-page.title')">
+    <div class="relative flex w-full justify-center pt-16 pb-48 px-4">
+      <div class="absolute top-0 left-0 bg-polygon-1 w-full h-full bg-teal-400 z-0" />
+      <div class="absolute top-0 left-0 bg-polygon-2 w-full h-full bg-gray-300 z-10" />
+      <!-- component -->
+      <ContactForm />
     </div>
   </page-contant>
 </template>
@@ -20,8 +23,10 @@ export default Vue.extend({
 </script>
 
 <style>
-.box {
-  border-top: 100% solid #008ce6;
-  border-right: 100% solid transparent;
+.bg-polygon-1 {
+  clip-path: polygon(0 60%, 100% 0%, 100% 100%, 0% 100%);
+}
+.bg-polygon-2 {
+  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0% 100%);
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <page-contant :title="$t('services-page.title')" class="px-4">
-    <div class="container flex-col items-center space-y-8 md:space-y-16 pb-6 mx-auto">
+  <page-contant :title="$t('services-page.title')" class="px-4 pb-12">
+    <div class="container flex-col items-center space-y-8 md:space-y-16 mx-auto">
       <div class="flex flex-col space-y-6 md:space-y-12">
         <div class="text-center">
           <h3 class="text-sm">
