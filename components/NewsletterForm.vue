@@ -1,5 +1,5 @@
 <template>
-  <div class="py-8 px-6 text-white">
+  <div class="py-8 text-white">
     <div class="flex flex-col max-w-screen-sm mx-auto">
       <div class="w-full text-center">
         <div class="text-xl md:text-3xl font-light inline-flex items-center">
@@ -13,7 +13,7 @@
       <div class="flex flex-col mt-8 text-sm md:text-lg">
         <div class="flex h-12 space-x-6">
           <input type="email" class="flex-auto text-gray-500 px-3 py-2 rounded-lg hover:border-2 border focus:outline-none truncate" :placeholder="$t('newsletter.enter-email')">
-          <TheButton class="flex-1">
+          <TheButton>
             {{ $t('newsletter.subscribe-btn') }}
           </TheButton>
         </div>
