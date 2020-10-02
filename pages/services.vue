@@ -1,7 +1,7 @@
 <template>
   <page-contant :title="$t('services-page.title')" class="px-4 pb-12">
-    <div class="container flex-col items-center space-y-24 md:space-y-32 mx-auto">
-      <div class="flex flex-col space-y-6 md:space-y-12 text-sm md:text-base">
+    <div class="container flex-col items-center space-y-24 md:space-y-32 mx-auto text-base">
+      <div class="flex flex-col space-y-6 md:space-y-12">
         <div class="text-center">
           <h3>
             {{ $t('services-page.login-service.subtitle') }}
@@ -14,7 +14,7 @@
           <div>
             <img src="~/assets/image/app-login.svg" alt="App Login" class="h-48 md:h-64">
           </div>
-          <div class="text-center">
+          <div class="text-center md:text-lg">
             <p>{{ $t('services-page.login-service.content.1') }}</p>
             <p class="text-orange-500">
               {{ $t('services-page.login-service.content.2') }}
