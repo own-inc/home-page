@@ -1,5 +1,5 @@
 <template>
-  <page-contant :title="$t('about-page.title')" class="p-4">
+  <page-contant :title="$t('about-page.title')" class="px-4">
     <div class="flex flex-col items-center md:items-start md:flex-row md:w-2/3 h-full mx-auto md:mt-8">
       <div class="w-1/2 xl:w-1/3 mb-8 md:mr-8 lg:mr-16">
         <img src="~/assets/image/company.svg" alt="Company" class="w-full">

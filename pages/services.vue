@@ -1,5 +1,5 @@
 <template>
-  <page-contant :title="$t('services-page.title')" class="p-4">
+  <page-contant :title="$t('services-page.title')" class="px-4">
     <div class="container flex-col items-center space-y-8 md:space-y-16 pb-6 mx-auto">
       <div class="flex flex-col space-y-6 md:space-y-12">
         <div class="text-center">
