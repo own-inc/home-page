@@ -40,9 +40,10 @@
         <services-list :services="devServices" />
       </div>
       <div class="flex p-3 justify-center">
-        <button class="btn">
+        <nuxt-link :to="localePath('/contact/')" class="btn">
           {{ $t('services-page.dev-services.btn.contact') }}
-        </button>
+          </button>
+        </nuxt-link>
       </div>
     </div>
   </page-contant>

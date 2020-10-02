@@ -6,9 +6,9 @@
     <a class="hover:text-teal-300" href="https://twitter.com/own_id" target="_blank">
       <Icon icon="bx:bxl-twitter" />
     </a>
-    <a class="hover:text-teal-300" href="/" target="_blank">
+    <nuxt-link class="hover:text-teal-300" :to="localePath('/contact/')">
       <Icon icon="bx:bx-mail-send" />
-    </a>
+    </nuxt-link>
     <nuxt-link
       v-for="locale in availableLocales"
       :key="locale.code"
