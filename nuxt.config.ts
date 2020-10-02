@@ -13,7 +13,8 @@ const config: NuxtConfig = {
       { hid: 'twitter:site', name: 'twitter:site', content: '@own_id' }
     ],
     link: [
-      { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
+      { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+      { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }
     ]
   },
   css: [
