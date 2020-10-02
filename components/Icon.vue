@@ -4,8 +4,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-// @ts-ignore
-import Iconify from '@purge-icons/generated'
+import Iconify from '@iconify/iconify'
 export default Vue.extend({
   props: {
     icon: {
@@ -27,8 +26,7 @@ export default Vue.extend({
       this.$nextTick(() => {
         const el = this.$refs.el as Element
         if (el) {
-          // @ts-ignore
-          const svg = Iconify.default.renderSVG(this.icon, {})
+          const svg = Iconify.renderSVG(this.icon, {})
           if (svg) {
             el.textContent = ''
             el.appendChild(svg)
