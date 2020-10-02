@@ -51,6 +51,7 @@ const config: NuxtConfig = {
     ]
   },
   css: [
+    '@/assets/css/main.css'
   ],
   plugins: [
   ],
