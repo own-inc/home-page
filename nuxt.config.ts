@@ -10,7 +10,37 @@ const config: NuxtConfig = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'og:site_name', property: 'og:site_name', content: 'OwN Inc.' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'twitter:site', name: 'twitter:site', content: '@own_id' }
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: process.env.URL || 'https://dev.own-auth.io'
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: `${process.env.URL || 'https://dev.own-auth.io'}/own-card.png`
+      },
+      {
+        hid: 'og:image:secure_url',
+        property: 'og:image:secure_url',
+        content: `${process.env.URL || 'https://dev.own-auth.io'}/own-card.png`
+      },
+      {
+        hid: 'og:image:alt',
+        property: 'og:image:alt',
+        content: 'OwN Inc.'
+      },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@own_id' },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image'
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: `${process.env.URL || 'https://dev.own-auth.io'}/own-card.png`
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
