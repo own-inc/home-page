@@ -76,7 +76,7 @@ export default Vue.extend({
   },
   head (): MetaInfo {
     return {
-      title: 'About'
+      title: this.$tc('services-page.title')
     }
   }
 })

@@ -86,6 +86,9 @@
       }
     ]
   },
+  "contact-page": {
+    "title": "連絡"
+  },
   "newsletter": {
     "title": "OwN Newsletter",
     "subtitle": "OwNのニュースレターを購読して限定情報を手に入れましょう！",

@@ -13,7 +13,7 @@ import { MetaInfo } from 'vue-meta'
 export default Vue.extend({
   head (): MetaInfo {
     return {
-      title: 'Coontact'
+      title: this.$tc('contact-page.title')
     }
   }
 })

@@ -47,7 +47,7 @@ export default Vue.extend({
   },
   head (): MetaInfo {
     return {
-      title: 'News'
+      title: this.$tc('news-page.title')
     }
   }
 })

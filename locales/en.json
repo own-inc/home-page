@@ -86,6 +86,9 @@
       }
     ]
   },
+  "contact-page": {
+    "title": "Contact"
+  },
   "newsletter": {
     "title": "OwN Newsletter",
     "subtitle": "Subscribe to the OwN newsletter for exclusive information!",
