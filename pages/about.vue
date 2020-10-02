@@ -30,9 +30,6 @@ export default Vue.extend({
       companyInfo: this.$t('about-page.componyInfo')
     }
   },
-  created () {
-    console.log(this.$t('about-page'))
-  },
   head (): MetaInfo {
     return {
       title: this.$tc('about-page.title')
