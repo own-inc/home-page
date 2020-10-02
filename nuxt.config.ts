@@ -30,7 +30,8 @@ const config: NuxtConfig = {
   modules: [
     '@nuxtjs/pwa',
     '@nuxt/content',
-    ['nuxt-i18n', i18n]
+    ['nuxt-i18n', i18n],
+    '@nuxtjs/sitemap'
   ],
   env: {
     DEPLOY_PRIME_URL: process.env.DEPLOY_PRIME_URL || 'https://dev.own-auth.io',
@@ -48,6 +49,11 @@ const config: NuxtConfig = {
   },
   router: {
     trailingSlash: true
+  },
+  sitemap: {
+    hostname: process.env.URL || 'https://dev.own-auth.io',
+    gzip: true,
+    i18n: true
   }
 }
 
