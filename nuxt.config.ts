@@ -5,6 +5,9 @@ const config: NuxtConfig = {
   target: 'static',
   head: {
     titleTemplate: c => c ? `${c} | OwN Inc.` : 'OwN Inc. - own-auth.io',
+    htmlAttrs: {
+      prefix: 'og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
