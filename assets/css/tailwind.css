@@ -2,7 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.btn {
+.btn-bk {
   @apply bg-none px-4 py-2 border border-black rounded-md;
 }
 
@@ -14,11 +14,11 @@
   @apply bg-none px-3 py-2 border border-teal-400 text-teal-400 rounded-md;
 }
 
-.btn:hover {
+.btn-bk:hover {
   @apply border-gray-700 text-gray-700;
 }
 
-.btn:focus {
+.btn-bk:focus {
   @apply border-teal-500;
 }
 
