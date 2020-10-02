@@ -58,6 +58,34 @@
       }
     }
   },
+  "news-page": {
+    "title": "News"
+  },
+  "about-page": {
+    "title": "About",
+    "componyInfo": [
+      {
+        "title": "Company name",
+        "content": "OwN.inc"
+      },
+      {
+        "title": "CEO",
+        "content": "Takumi Kasuo"
+      },
+      {
+        "title": "Capital",
+        "content": "400,000円"
+      },
+      {
+        "title": "Members",
+        "content": "3 people (including officers and part-time jobs)"
+      },
+      {
+        "title": "Location",
+        "content": "5-22-37 Higashigotanda, Shinagawa-ku, Tokyo 141-0022"
+      }
+    ]
+  },
   "newsletter": {
     "title": "OwN Newsletter",
     "subtitle": "Subscribe to the OwN newsletter for exclusive information!",

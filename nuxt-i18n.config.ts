@@ -1,5 +1,5 @@
 import type { NuxtVueI18n } from 'nuxt-i18n'
-import { locales } from './locales'
+import { locales, dateTimeFormats } from './locales'
 
 const options: NuxtVueI18n.Options.AllOptionsInterface = {
   baseUrl: process.env.URL || 'https://dev.own-auth.io',
@@ -8,7 +8,8 @@ const options: NuxtVueI18n.Options.AllOptionsInterface = {
   defaultLocale: 'ja',
   lazy: true,
   vueI18n: {
-    fallbackLocale: 'ja'
+    fallbackLocale: 'ja',
+    dateTimeFormats
   },
   locales
 }

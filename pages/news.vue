@@ -1,5 +1,5 @@
 <template>
-  <page-contant title="News" class="p-4">
+  <page-contant :title="$t('news-page.title')" class="p-4">
     <news-list :news="newsData" />
     <div class="w-full flex justify-center mt-12">
       <button class="btn">
@@ -18,27 +18,27 @@ export default Vue.extend({
     return {
       newsData: [
         {
-          date: '2020/09/25',
+          date: this.$d(new Date('2020/09/25'), 'date'),
           type: 'お知らせ',
           message: 'ここには、お知らせの文章が入ります××××××××××××××××'
         },
         {
-          date: '2020/09/25',
+          date: this.$d(new Date('2020/09/25'), 'date'),
           type: 'お知らせ',
           message: 'ここには、お知らせの文章が入ります××××××××××××××××'
         },
         {
-          date: '2020/09/25',
+          date: this.$d(new Date('2020/09/25'), 'date'),
           type: 'お知らせ',
           message: 'ここには、お知らせの文章が入ります××××××××××××××××'
         },
         {
-          date: '2020/09/25',
+          date: this.$d(new Date('2020/09/25'), 'date'),
           type: 'お知らせ',
           message: 'ここには、お知らせの文章が入ります××××××××××××××××'
         },
         {
-          date: '2020/09/25',
+          date: this.$d(new Date('2020/09/25'), 'date'),
           type: 'お知らせ',
           message: 'ここには、お知らせの文章が入ります××××××××××××××××'
         }

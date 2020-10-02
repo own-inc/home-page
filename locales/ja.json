@@ -58,6 +58,34 @@
       }
     }
   },
+  "news-page": {
+    "title": "ニュース"
+  },
+  "about-page": {
+    "title": "会社情報",
+    "componyInfo": [
+      {
+        "title": "会社名",
+        "content": "株式会社OwN (英: OwN.inc)"
+      },
+      {
+        "title": "代表取締役",
+        "content": "粕尾 拓未"
+      },
+      {
+        "title": "資本金",
+        "content": "400,000円"
+      },
+      {
+        "title": "メンバー数",
+        "content": "3名 (役員、アルバイトを含む)"
+      },
+      {
+        "title": "所在地",
+        "content": "〒141-0022 東京都品川区東五反田5丁目22-37"
+      }
+    ]
+  },
   "newsletter": {
     "title": "OwN Newsletter",
     "subtitle": "OwNのニュースレターを購読して限定情報を手に入れましょう！",

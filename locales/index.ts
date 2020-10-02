@@ -30,3 +30,33 @@ export const locales: Array<locale> = [
     description: 'English'
   }
 ]
+
+export const dateTimeFormats = {
+  en: {
+    date: {
+      year: 'numeric', month: 'short', day: 'numeric'
+    },
+    dateTime: {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+      weekday: 'short',
+      hour: 'numeric',
+      minute: 'numeric'
+    }
+  },
+  ja: {
+    date: {
+      year: 'numeric', month: 'short', day: 'numeric'
+    },
+    dateTime: {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+      weekday: 'short',
+      hour: 'numeric',
+      minute: 'numeric',
+      hour12: true
+    }
+  }
+}
