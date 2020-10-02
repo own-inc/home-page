@@ -87,7 +87,14 @@
     ]
   },
   "contact-page": {
-    "title": "連絡"
+    "title": "連絡",
+    "form": {
+      "name": "名前",
+      "email": "メールアドレス",
+      "message": "メッセージ",
+      "require": "*必要",
+      "send": "送る"
+    }
   },
   "newsletter": {
     "title": "OwN Newsletter",
