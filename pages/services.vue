@@ -22,7 +22,7 @@
             <p>{{ $t('services-page.login-service.content.3') }}</p>
             <p class="pt-2" />
             <p>{{ $t('services-page.login-service.content.4') }}</p>
-            <button class="btn-bk mt-6">
+            <button class="btn-bk mt-6 text-base">
               {{ $t('services-page.login-service.btn.coming-soon') }}
             </button>
           </div>
@@ -40,7 +40,7 @@
         <services-list :services="devServices" />
       </div>
       <div class="flex p-3 justify-center">
-        <nuxt-link :to="localePath('/contact/')" class="btn-bk">
+        <nuxt-link :to="localePath('/contact/')" class="btn-bk text-base md:text-lg">
           {{ $t('services-page.dev-services.btn.contact') }}
         </nuxt-link>
       </div>
