@@ -1,6 +1,6 @@
 <template>
   <page-contant :title="$t('services-page.title')" class="px-4 pb-12">
-    <div class="container flex-col items-center space-y-8 md:space-y-16 mx-auto">
+    <div class="container flex-col items-center space-y-24 md:space-y-32 mx-auto">
       <div class="flex flex-col space-y-6 md:space-y-12">
         <div class="text-center">
           <h3 class="text-sm">
@@ -12,7 +12,7 @@
         </div>
         <div class="flex flex-col md:flex-row space-y-4 md:space-x-4 items-center mx-auto">
           <div>
-            <img src="~/assets/image/app-login.svg" alt="App Login" class="-mt-2 h-48 md:h-64">
+            <img src="~/assets/image/app-login.svg" alt="App Login" class="h-48 md:h-64">
           </div>
           <div class="text-center text-sm">
             <p>{{ $t('services-page.login-service.content.1') }}</p>
