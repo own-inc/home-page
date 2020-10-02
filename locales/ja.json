@@ -4,7 +4,7 @@
       "services": "サービス",
       "news": "ニュース",
       "about": "会社情報",
-      "contact": "お問合わせ"
+      "contact": "お問い合わせ"
     },
     "auth": {
       "sign-in": "ログイン",
@@ -87,7 +87,7 @@
     ]
   },
   "contact-page": {
-    "title": "連絡",
+    "title": "お問い合わせ",
     "form": {
       "name": "名前",
       "email": "メールアドレス",
