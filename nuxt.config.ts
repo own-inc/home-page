@@ -50,11 +50,8 @@ const config: NuxtConfig = {
       { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }
     ]
   },
-  css: [
-    '@/assets/css/main.css'
-  ],
-  plugins: [
-  ],
+  css: [],
+  plugins: [],
   components: true,
   buildModules: [
     '@nuxt/typescript-build',
@@ -63,7 +60,6 @@ const config: NuxtConfig = {
     'nuxt-purge-icons-module'
   ],
   modules: [
-    '@nuxtjs/pwa',
     '@nuxt/content',
     ['nuxt-i18n', i18n],
     '@nuxtjs/sitemap'
