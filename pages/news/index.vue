@@ -10,31 +10,25 @@ import { MetaInfo } from 'vue-meta'
 
 export default Vue.extend({
   async asyncData ({ $content, app }) {
-    const path = `${app.i18n.defaultLocale}`
-
-    let news = await $content(path, 'news')
+    let news = await $content(`${app.i18n.defaultLocale}/news`)
       .sortBy('date', 'desc')
       .fetch()
 
     if (app.i18n.defaultLocale !== app.i18n.locale) {
       try {
-        const newPosts = await $content(app.i18n.locale, 'news')
+        const newNews = await $content(`${app.i18n.locale}/news`)
           .sortBy('date', 'desc')
           .fetch()
+
         news = news.map((news: any) => {
-          const newNews = newPosts.find((newNews: { slug: string }) => newNews.slug === news.slug)
-          return newNews || news
+          const item = newNews.find((newNews: { slug: string }) => newNews.slug === news.slug)
+          return item || news
         })
       } catch (err) {}
     }
 
     return {
       news
-    }
-  },
-  data () {
-    return {
-      news: []
     }
   },
   head (): MetaInfo {
