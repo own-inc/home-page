@@ -45,22 +45,22 @@ export default Vue.extend({
       return [
         {
           title: this.$t('header.nav.services'),
-          link: '/services/',
+          link: { name: 'services' },
           icon: 'bx:bxl-dev-to'
         },
         {
           title: this.$t('header.nav.news'),
-          link: '/news/',
+          link: { name: 'news' },
           icon: 'bx:bx-news'
         },
         {
           title: this.$t('header.nav.about'),
-          link: '/about/',
+          link: { name: 'about' },
           icon: 'bx:bx-building'
         },
         {
           title: this.$t('header.nav.contact'),
-          link: '/contact/',
+          link: { name: 'contact' },
           icon: 'bx:bx-comment-detail'
         }
       ]
