@@ -21,7 +21,7 @@ import { MetaInfo } from 'vue-meta'
 export default Vue.extend({
   async asyncData ({ $content, app, params, error }) {
     const { slug } = params
-    let path = `/${app.i18n.defaultLocale}/news/`
+    let path = `/${app.i18n.defaultLocale}/news`
     let news
 
     try {
@@ -31,10 +31,10 @@ export default Vue.extend({
     }
     if (app.i18n.defaultLocale !== app.i18n.locale) {
       try {
-        path = `/${app.i18n.locale}/news/`
+        path = `/${app.i18n.locale}/news`
         news = await $content(path, slug).fetch()
       } catch (err) {
-        path = `/${app.i18n.defaultLocale}/news/`
+        path = `/${app.i18n.defaultLocale}/news`
       }
     }
 
@@ -43,16 +43,19 @@ export default Vue.extend({
     }
   },
   head (): MetaInfo {
+    const title = (this as any).news.title
+    const description = (this as any).news.description
+
     return {
       title: (this as any).news.title,
       meta: [
-        { hid: 'description', name: 'description', content: (this as any).news.description },
+        { hid: 'description', name: 'description', content: description },
         // Open Graph
-        { hid: 'og:title', property: 'og:title', content: (this as any).news.title },
-        { hid: 'og:description', property: 'og:description', content: (this as any).news.description },
+        { hid: 'og:title', property: 'og:title', content: title },
+        { hid: 'og:description', property: 'og:description', content: description },
         // Twitter Card
-        { hid: 'twitter:title', name: 'twitter:title', content: (this as any).news.title },
-        { hid: 'twitter:description', name: 'twitter:description', content: (this as any).news.description }
+        { hid: 'twitter:title', name: 'twitter:title', content: title },
+        { hid: 'twitter:description', name: 'twitter:description', content: description }
       ]
     }
   }
