@@ -59,7 +59,10 @@
     }
   },
   "news-page": {
-    "title": "ニュース"
+    "title": "ニュース",
+    "news": {
+      "go-back": "ニュースページに戻る"
+    }
   },
   "about-page": {
     "title": "会社情報",

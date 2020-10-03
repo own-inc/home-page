@@ -59,7 +59,10 @@
     }
   },
   "news-page": {
-    "title": "News"
+    "title": "News",
+    "news": {
+      "go-back": "Back to news page"
+    }
   },
   "about-page": {
     "title": "About",

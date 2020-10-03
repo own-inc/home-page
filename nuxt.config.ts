@@ -69,6 +69,11 @@ const config: NuxtConfig = {
     URL: process.env.URL || 'https://dev.own-auth.io'
   },
   content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css'
+      }
+    }
   },
   build: {
     postcss: {}
