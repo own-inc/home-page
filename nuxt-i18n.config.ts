@@ -6,12 +6,14 @@ const options: NuxtVueI18n.Options.AllOptionsInterface = {
   langDir: 'locales/',
   strategy: 'prefix_except_default',
   defaultLocale: 'ja',
+  seo: false,
   lazy: true,
   vueI18n: {
     fallbackLocale: 'ja',
     dateTimeFormats
   },
-  locales
+  locales,
+  parsePages: false
 }
 
 export default options
