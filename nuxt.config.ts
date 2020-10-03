@@ -81,7 +81,23 @@ const config: NuxtConfig = {
   purgeIcons: {
   },
   generate: {
-    fallback: true
+    fallback: true,
+    async routes () {
+      const { $content } = require('@nuxt/content')
+      let routes: string[]
+      const defaultLocalePaths = await $content(i18n.defaultLocale, { deep: true }).only(['path']).fetch()
+      routes = defaultLocalePaths.map((route: { path: string }) => route.path.replace(`/${i18n.defaultLocale}/`, '/') + '/')
+
+      i18n.locales?.forEach((local: any) => {
+        if (local.code !== i18n.defaultLocale) {
+          const newRoutes = routes.map((route: string) => {
+            return route.replace('/', `/${local.code}/`)
+          })
+          routes = routes.concat(newRoutes)
+        }
+      })
+      return routes
+    }
   },
   router: {
     trailingSlash: true
