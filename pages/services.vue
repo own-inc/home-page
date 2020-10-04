@@ -1,6 +1,6 @@
 <template>
   <page-contant :title="$t('services-page.title')" class="px-4 pb-12">
-    <div class="container flex-col items-center space-y-24 md:space-y-32 mx-auto text-base">
+    <div class="container flex-col items-center space-y-24 md:space-y-32 mx-auto text-base animate__animated animate__fadeIn">
       <div class="flex flex-col space-y-6 md:space-y-12">
         <div class="text-center">
           <h3>

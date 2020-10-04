@@ -28,7 +28,16 @@ module.exports = {
     }
   },
   variants: {},
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('tailwindcss-animatecss')({
+      classes: ['animate__animated', 'animate__fadeInUp', 'animate__fadeIn'],
+      settings: {
+        animatedSpeed: 800
+      },
+      variants: ['responsive', 'hover', 'reduced-motion']
+    })
+  ],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
     enabled: process.env.NODE_ENV === 'production',

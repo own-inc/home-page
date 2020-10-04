@@ -1,6 +1,6 @@
 <template>
   <page-contant :title="$t('contact-page.title')">
-    <div class="relative flex w-full justify-center pt-16 pb-48 px-4">
+    <div class="relative flex w-full justify-center pt-16 pb-48 px-4 animate__animated animate__fadeIn">
       <div class="absolute top-0 left-0 bg-polygon-1 w-full h-full bg-teal-400 z-0" />
       <div class="absolute top-0 left-0 bg-polygon-2 w-full h-full bg-gray-300 z-10" />
       <!-- component -->
