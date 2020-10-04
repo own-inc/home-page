@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col md:flex-row md:w-3/4 relative mx-auto py-8 md:py-24 xl:py-32 p-4 min-h-screen">
+  <section class="flex flex-col md:flex-row md:w-3/4 relative mx-auto py-12 md:py-24 xl:py-32 p-4 min-h-screen">
     <div class="flex flex-col w-full items-start m-none">
       <h1 class="text-5xl xl:text-6xl font-semibold leading-tight animate__animated animate__fadeInUp">
         {{ $t('homepage.main.title') }}
@@ -17,7 +17,7 @@
         </nuxt-link>
       </div>
     </div>
-    <div class="pt-8 md:pt-48 w-1/2 md:w-2/5 self-end">
+    <div class="mt-16 w-1/2 md:w-2/5 self-end">
       <img src="~/assets/image/bro.svg" alt="" class="w-full animate__animated animate__fadeIn">
     </div>
   </section>
