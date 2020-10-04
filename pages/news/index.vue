@@ -11,13 +11,17 @@ import { MetaInfo } from 'vue-meta'
 export default Vue.extend({
   async asyncData ({ $content, app }) {
     let news = await $content(`${app.i18n.defaultLocale}/news`)
-      .sortBy('date', 'desc')
+      .only(['title', 'type', 'slug', 'createdAt'])
+      .sortBy('createdAt', 'desc')
       .fetch()
+
+    console.log(news)
 
     if (app.i18n.defaultLocale !== app.i18n.locale) {
       try {
         const newNews = await $content(`${app.i18n.locale}/news`)
-          .sortBy('date', 'desc')
+          .only(['title', 'type', 'slug', 'createdAt'])
+          .sortBy('createdAt', 'desc')
           .fetch()
 
         news = news.map((news: any) => {
