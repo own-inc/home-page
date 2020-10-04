@@ -15,8 +15,6 @@ export default Vue.extend({
       .sortBy('createdAt', 'desc')
       .fetch()
 
-    console.log(news)
-
     if (app.i18n.defaultLocale !== app.i18n.locale) {
       try {
         const newNews = await $content(`${app.i18n.locale}/news`)
