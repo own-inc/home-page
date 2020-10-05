@@ -62,6 +62,7 @@ const config: NuxtConfig = {
   modules: [
     '@nuxt/content',
     ['nuxt-i18n', i18n],
+    '@nuxtjs/axios',
     '@nuxtjs/sitemap'
   ],
   env: {
