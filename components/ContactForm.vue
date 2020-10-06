@@ -10,8 +10,8 @@
         </template>
       </i18n>
     </div>
-    <div class="flex flex-wrap -mx-3 mb-4">
-      <ValidationProvider v-slot="{ errors }" :name="$t('contact-page.form.name')" rules="required" class="w-full px-3" tag="div">
+    <ValidationProvider v-slot="{ errors }" :name="$t('contact-page.form.name')" rules="required" class="flex flex-wrap -mx-3 mb-4">
+      <div class="w-full px-3" tag="div">
         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
           {{ $t('contact-page.form.name') }}
         </label>
@@ -19,10 +19,10 @@
         <p class="text-red-600 text-xs italic h-4">
           {{ errors[0] }}
         </p>
-      </ValidationProvider>
-    </div>
-    <div class="flex flex-wrap -mx-3 mb-4">
-      <ValidationProvider v-slot="{ errors }" :name="$t('contact-page.form.email')" rules="required|email" class="w-full px-3" tag="div">
+      </div>
+    </ValidationProvider>
+    <ValidationProvider v-slot="{ errors }" :name="$t('contact-page.form.email')" rules="required|email" class="flex flex-wrap -mx-3 mb-4">
+      <div class="w-full px-3" tag="div">
         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
           {{ $t('contact-page.form.email') }}
         </label>
@@ -30,10 +30,10 @@
         <p class="text-red-600 text-xs italic h-4">
           {{ errors[0] }}
         </p>
-      </ValidationProvider>
-    </div>
-    <div class="flex flex-wrap -mx-3 mb-4">
-      <ValidationProvider v-slot="{ errors }" :name="$t('contact-page.form.message')" rules="required" class="w-full px-3" tag="div">
+      </div>
+    </ValidationProvider>
+    <ValidationProvider v-slot="{ errors }" :name="$t('contact-page.form.message')" rules="required" class="flex flex-wrap -mx-3 mb-4">
+      <div class="w-full px-3" tag="div">
         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
           {{ $t('contact-page.form.message') }}
         </label>
@@ -41,9 +41,9 @@
         <p class="text-red-600 text-xs italic h-4">
           {{ errors[0] }}
         </p>
-      </ValidationProvider>
-    </div>
-    <TealButton v-if="showBtn" :is-disable="!valid" @click="uploadFormData()">
+      </div>
+    </ValidationProvider>
+    <TealButton v-if="!isDisable" :is-disable="!valid" @click="uploadFormData()">
       <Icon v-if="loading" class="iconify mr-2 -ml-1 animate-spin" icon="mdi:loading" />
       <Icon v-else icon="bx:bx-send" class="mr-2" />
       {{ $t('contact-page.form.send') }}
@@ -62,7 +62,7 @@ export default Vue.extend({
         message: ''
       },
       show: false,
-      showBtn: true,
+      isDisable: false,
       loading: false
     }
   },
@@ -72,7 +72,7 @@ export default Vue.extend({
       await this.$axios.$post('/form-api/form-api-production-form', this.form)
       this.loading = false
       this.show = true
-      this.showBtn = false
+      this.isDisable = true
     }
   }
 })
