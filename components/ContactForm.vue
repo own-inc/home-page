@@ -50,8 +50,9 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
   data () {
     return {
       form: {
@@ -67,13 +68,13 @@ export default {
   methods: {
     async uploadFormData () {
       this.loading = true
-      await this.$axios.$post('/form-api', this.form)
+      await this.$axios.$post('/form-api/form-api-production-form', this.form)
       this.loading = false
       this.show = true
       this.isDisable = true
     }
   }
-}
+})
 </script>
 
 <style>
