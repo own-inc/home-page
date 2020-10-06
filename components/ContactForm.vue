@@ -43,7 +43,7 @@
         </p>
       </ValidationProvider>
     </div>
-    <TealButton v-if="!isDisable" :is-disable="!valid" @click="uploadFormData()">
+    <TealButton v-if="showBtn" :is-disable="!valid" @click="uploadFormData()">
       <Icon v-if="loading" class="iconify mr-2 -ml-1 animate-spin" icon="mdi:loading" />
       <Icon v-else icon="bx:bx-send" class="mr-2" />
       {{ $t('contact-page.form.send') }}
@@ -62,7 +62,7 @@ export default Vue.extend({
         message: ''
       },
       show: false,
-      isDisable: false,
+      showBtn: true,
       loading: false
     }
   },
@@ -72,7 +72,7 @@ export default Vue.extend({
       await this.$axios.$post('/form-api/form-api-production-form', this.form)
       this.loading = false
       this.show = true
-      this.isDisable = true
+      this.showBtn = false
     }
   }
 })
