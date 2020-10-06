@@ -8,3 +8,6 @@
   to = "https://hooks.zapier.com/hooks/catch/8656224/ogh0to4/"
   status = 200
   force = true
+
+[build.environment]
+    NPM_FLAGS="--prefix=/"
