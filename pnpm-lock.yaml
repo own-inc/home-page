@@ -15,6 +15,7 @@ devDependencies:
   '@nuxtjs/eslint-config': 3.1.0_eslint@7.10.0+typescript@4.0.3
   '@nuxtjs/eslint-config-typescript': 2.0.0_eslint@7.10.0+typescript@4.0.3
   '@nuxtjs/eslint-module': 2.0.0_eslint@7.10.0
+  '@nuxtjs/netlify-files': 1.2.0
   '@nuxtjs/svg': 0.1.12
   '@nuxtjs/tailwindcss': 3.1.0
   babel-eslint: 10.1.0_eslint@7.10.0
@@ -1010,6 +1011,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-qnKm5dIOyPGJ70kPZ5jiz0I9foVOic0j+cOzNDoo8KoCf6HjicIZ99UfO2OmE7vCYSKAAepEwJtNzpiiZAh9xw==
+  /@iarna/toml/2.2.5:
+    dev: true
+    resolution:
+      integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==
   /@iconify/iconify/2.0.0-rc.1:
     resolution:
       integrity: sha512-ji5H04VjYtR4seIEgVVLPxg1KRhrFquOiyfPyLVS6vYPkuqV6bcWdssi05YSmf/OAzG4E7Qsg80/bOKyd5tYTw==
@@ -1544,6 +1549,13 @@ packages:
       eslint: '>=6'
     resolution:
       integrity: sha512-uL3prMRwSBcxy583O11nMiUtfA2fxF7lZgCCUCsq4FNCqv320euJ7XE3KNZT6IVs/QJ1vaUNLC8tL4SZS99Tjw==
+  /@nuxtjs/netlify-files/1.2.0:
+    dependencies:
+      '@iarna/toml': 2.2.5
+      consola: 2.15.0
+    dev: true
+    resolution:
+      integrity: sha512-4Kr2saBXWEpglAAjuMc1cxa6YFTP/2SpsqmJi3PhcvxDHRkmVioDjQHIvjgPu8uW2E1DgPtZb2JdPS2EXC4DiA==
   /@nuxtjs/proxy/2.0.1:
     dependencies:
       consola: 2.15.0
@@ -10704,6 +10716,7 @@ specifiers:
   '@nuxtjs/eslint-config': ^3.1.0
   '@nuxtjs/eslint-config-typescript': ^2.0.0
   '@nuxtjs/eslint-module': ^2.0.0
+  '@nuxtjs/netlify-files': ^1.2.0
   '@nuxtjs/sitemap': ^2.4.0
   '@nuxtjs/svg': ^0.1.12
   '@nuxtjs/tailwindcss': ^3.1.0

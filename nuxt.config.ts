@@ -57,7 +57,8 @@ const config: NuxtConfig = {
     '@nuxt/typescript-build',
     '@nuxtjs/svg',
     '@nuxtjs/tailwindcss',
-    'nuxt-purge-icons-module'
+    'nuxt-purge-icons-module',
+    '@nuxtjs/netlify-files'
   ],
   modules: [
     '@nuxt/content',
@@ -107,6 +108,22 @@ const config: NuxtConfig = {
     hostname: process.env.URL || 'https://dev.own-auth.io',
     gzip: true,
     i18n: true
+  },
+  netlifyFiles: {
+    headers: [
+      {
+        for: '/*',
+        values: { 'X-XSS-Protection': '1; mode=block' }
+      }
+    ],
+    redirects: [
+      {
+        from: '/contactform',
+        to: 'https://hooks.zapier.com/hooks/catch/8656224/ogh0to4/',
+        status: 200,
+        force: true
+      }
+    ]
   }
 }
 
