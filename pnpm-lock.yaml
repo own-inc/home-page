@@ -9,6 +9,7 @@ dependencies:
   nuxt-i18n: 6.15.1
   prism-themes: 1.4.0
   tailwindcss-animatecss: 1.0.7
+  vee-validate: 3.4.0
 devDependencies:
   '@nuxt/types': 2.14.6
   '@nuxt/typescript-build': 2.0.3_@nuxt+types@2.14.6
@@ -10222,6 +10223,12 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
+  /vee-validate/3.4.0:
+    dev: false
+    peerDependencies:
+      vue: ^2.5.18
+    resolution:
+      integrity: sha512-qxcqrGYr2gchZOjyhBKu7G4NOyOTmH6vk8APGdxAiL/0Iy2QZP/vcOYNbx7+zMhg7P3q418AseHR1sbckB5I+A==
   /vendors/1.0.4:
     dev: false
     resolution:
@@ -10730,3 +10737,4 @@ specifiers:
   prism-themes: ^1.4.0
   tailwindcss-animatecss: ^1.0.7
   typescript: ^4.0.3
+  vee-validate: ^3.4.0

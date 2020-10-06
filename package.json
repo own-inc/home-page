@@ -23,7 +23,8 @@
     "nuxt": "^2.14.6",
     "nuxt-i18n": "^6.15.1",
     "prism-themes": "^1.4.0",
-    "tailwindcss-animatecss": "^1.0.7"
+    "tailwindcss-animatecss": "^1.0.7",
+    "vee-validate": "^3.4.0"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.6",

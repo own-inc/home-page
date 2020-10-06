@@ -51,7 +51,9 @@ const config: NuxtConfig = {
     ]
   },
   css: [],
-  plugins: [],
+  plugins: [
+    '~/plugins/validate.ts'
+  ],
   components: true,
   buildModules: [
     '@nuxt/typescript-build',
@@ -78,7 +80,10 @@ const config: NuxtConfig = {
     }
   },
   build: {
-    postcss: {}
+    postcss: {},
+    transpile: [
+      'vee-validate/dist/rules'
+    ]
   },
   purgeIcons: {
   },

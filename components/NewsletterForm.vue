@@ -11,14 +11,15 @@
         </p>
       </div>
       <div class="flex flex-col mt-8 text-sm md:text-lg">
-        <div class="flex h-12 space-x-6">
-          <input v-model="form.email" type="email" class="flex-auto text-gray-500 px-3 py-2 rounded-lg hover:border-2 border focus:outline-none truncate" :placeholder="$t('newsletter.enter-email')">
-          <TealButton @click="uploadFormData()">
+        <ValidationProvider v-slot="{ errors, valid }" name="email" rules="required|email" class="flex h-12 relative">
+          <input v-model="form.email" type="email" class="flex-auto text-gray-500 px-3 py-2 rounded-lg hover:border-2 border focus:outline-none truncate mr-6" :placeholder="$t('newsletter.enter-email')">
+          <span class="absolute bottom-0 left-0 transform translate-y-8 text-sm text-red-800 p-2">{{ errors[0] }}</span>
+          <TealButton :is-disable="!valid" @click="uploadFormData()">
             <Icon v-if="loading" class="iconify mr-2 -ml-1 animate-spin" icon="mdi:loading" />
             <Icon v-else icon="bx:bx-send" class="mr-2" />
             {{ $t('newsletter.subscribe-btn') }}
           </TealButton>
-        </div>
+        </ValidationProvider>
         <a href="#" class="text-xs self-end mt-4 text-gray-300 hover:text-gray-500">
           {{ $t('newsletter.privacy-policy') }}
         </a>
