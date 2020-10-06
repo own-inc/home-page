@@ -10,8 +10,8 @@
         </template>
       </i18n>
     </div>
-    <ValidationProvider v-slot="{ errors }" :name="$t('contact-page.form.name')" rules="required" class="flex flex-wrap -mx-3 mb-4">
-      <div class="w-full px-3" tag="div">
+    <ValidationProvider v-slot="{ errors }" :name="$t('contact-page.form.name')" rules="required" class="flex flex-wrap -mx-3 mb-4" tag="div">
+      <div class="w-full px-3">
         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
           {{ $t('contact-page.form.name') }}
         </label>
@@ -21,8 +21,8 @@
         </p>
       </div>
     </ValidationProvider>
-    <ValidationProvider v-slot="{ errors }" :name="$t('contact-page.form.email')" rules="required|email" class="flex flex-wrap -mx-3 mb-4">
-      <div class="w-full px-3" tag="div">
+    <ValidationProvider v-slot="{ errors }" :name="$t('contact-page.form.email')" rules="required|email" class="flex flex-wrap -mx-3 mb-4" tag="div">
+      <div class="w-full px-3">
         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
           {{ $t('contact-page.form.email') }}
         </label>
@@ -32,8 +32,8 @@
         </p>
       </div>
     </ValidationProvider>
-    <ValidationProvider v-slot="{ errors }" :name="$t('contact-page.form.message')" rules="required" class="flex flex-wrap -mx-3 mb-4">
-      <div class="w-full px-3" tag="div">
+    <ValidationProvider v-slot="{ errors }" :name="$t('contact-page.form.message')" rules="required" class="flex flex-wrap -mx-3 mb-4" tag="div">
+      <div class="w-full px-3">
         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
           {{ $t('contact-page.form.message') }}
         </label>
@@ -43,7 +43,7 @@
         </p>
       </div>
     </ValidationProvider>
-    <TealButton :is-disable="!valid || isDisable" @click="uploadFormData()">
+    <TealButton v-if="!isDisable" :is-disable="!valid" @click="uploadFormData()">
       <Icon v-if="loading" class="iconify mr-2 -ml-1 animate-spin" icon="mdi:loading" />
       <Icon v-else icon="bx:bx-send" class="mr-2" />
       {{ $t('contact-page.form.send') }}

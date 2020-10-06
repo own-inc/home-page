@@ -52,7 +52,7 @@ const config: NuxtConfig = {
   },
   css: [],
   plugins: [
-    '~/plugins/validate.ts'
+    { src: '~/plugins/validate.ts', ssr: false }
   ],
   components: true,
   buildModules: [
