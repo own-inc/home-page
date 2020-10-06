@@ -1,5 +1,5 @@
 <template>
-  <ValidationObserver v-slot="{ valid }" class="w-full max-w-lg bg-white border-2 border-gray-100 shadow-lg p-6 rounded-lg z-20">
+  <ValidationObserver v-slot="{ valid }" class="w-full max-w-lg bg-white border-2 border-gray-100 shadow-lg p-6 rounded-lg z-20" tag="div">
     <div v-if="show" class="flex flex-wrap mb-6">
       <div class="text-2xl font-semibold">
         {{ $t('contact-page.form.thanks') }}
@@ -11,7 +11,7 @@
       </i18n>
     </div>
     <div class="flex flex-wrap -mx-3 mb-4">
-      <ValidationProvider v-slot="{ errors }" :name="$t('contact-page.form.name')" rules="required" class="w-full px-3">
+      <ValidationProvider v-slot="{ errors }" :name="$t('contact-page.form.name')" rules="required" class="w-full px-3" tag="div">
         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
           {{ $t('contact-page.form.name') }}
         </label>
@@ -22,7 +22,7 @@
       </ValidationProvider>
     </div>
     <div class="flex flex-wrap -mx-3 mb-4">
-      <ValidationProvider v-slot="{ errors }" :name="$t('contact-page.form.email')" rules="required|email" class="w-full px-3">
+      <ValidationProvider v-slot="{ errors }" :name="$t('contact-page.form.email')" rules="required|email" class="w-full px-3" tag="div">
         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
           {{ $t('contact-page.form.email') }}
         </label>
@@ -33,7 +33,7 @@
       </ValidationProvider>
     </div>
     <div class="flex flex-wrap -mx-3 mb-4">
-      <ValidationProvider v-slot="{ errors }" :name="$t('contact-page.form.message')" rules="required" class="w-full px-3">
+      <ValidationProvider v-slot="{ errors }" :name="$t('contact-page.form.message')" rules="required" class="w-full px-3" tag="div">
         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
           {{ $t('contact-page.form.message') }}
         </label>
