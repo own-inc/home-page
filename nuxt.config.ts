@@ -125,8 +125,8 @@ const config: NuxtConfig = {
       ],
       redirects: [
         {
-          from: '/form-api',
-          to: process.env.FORM_API,
+          from: '/form-api/*',
+          to: process.env.FORM_API + '/:splat',
           status: 200,
           force: true
         },
