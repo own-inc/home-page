@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <ValidationObserver v-slot="{ invalid }" class="w-full max-w-lg bg-white border-2 border-gray-100 shadow-lg p-6 rounded-lg z-20" tag="form" @submit.prevent="onSubmit()">
+  <div class="w-full max-w-lg bg-white border-2 border-gray-100 shadow-lg p-6 rounded-lg z-20">
+    <ValidationObserver v-slot="{ invalid }" tag="form" @submit.prevent="onSubmit()">
       <div v-if="show" class="flex flex-wrap mb-6">
         <div class="text-2xl font-semibold">
           {{ $t('contact-page.form.thanks') }}
