@@ -65,7 +65,7 @@ export default {
   },
   methods: {
     async uploadFormData () {
-      await this.$axios.$post(process.env.URL + '/contactform', this.form)
+      await this.$axios.$post('/form-api', this.form)
       this.show = true
       this.isDisable = true
     }

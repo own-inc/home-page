@@ -57,7 +57,8 @@ const config: NuxtConfig = {
     '@nuxt/typescript-build',
     '@nuxtjs/svg',
     '@nuxtjs/tailwindcss',
-    'nuxt-purge-icons-module'
+    'nuxt-purge-icons-module',
+    '@nuxtjs/netlify-files'
   ],
   modules: [
     '@nuxt/content',
@@ -107,6 +108,35 @@ const config: NuxtConfig = {
     hostname: process.env.URL || 'https://dev.own-auth.io',
     gzip: true,
     i18n: true
+  },
+  netlifyFiles: {
+    netlifyToml: {
+      build: {
+        environment: { NPM_FLAGS: '--prefix=/dev/null' }
+      },
+      headers: [
+        {
+          for: '/*',
+          values: {
+            'X-Frame-Options': 'DENY',
+            'X-XSS-Protection': '1; mode=block'
+          }
+        }
+      ],
+      redirects: [
+        {
+          from: '/form-api',
+          to: process.env.FORM_API,
+          status: 200,
+          force: true
+        },
+        {
+          from: '/*',
+          to: '/404.html',
+          status: 404
+        }
+      ]
+    }
   }
 }
 
