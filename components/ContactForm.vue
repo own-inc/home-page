@@ -65,9 +65,7 @@ export default {
   },
   methods: {
     async uploadFormData () {
-      const proxy = 'https://cors-anywhere.herokuapp.com/'
-      const url = 'https://hooks.zapier.com/hooks/catch/8656224/ogh0to4/'
-      await this.$axios.$post(proxy + url, this.form)
+      await this.$axios.$post('/contactform', this.form)
       this.show = true
       this.isDisable = true
     }

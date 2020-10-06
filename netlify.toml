@@ -2,3 +2,9 @@
   from = "/*"
   to = "/404.html"
   status = 404
+
+[[redirects]]
+  from = "/contactform"
+  to = "https://hooks.zapier.com/hooks/catch/8656224/ogh0to4/"
+  status = 200
+  force = true
