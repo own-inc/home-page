@@ -114,9 +114,6 @@ const config: NuxtConfig = {
   },
   netlifyFiles: {
     netlifyToml: {
-      build: {
-        environment: { NPM_FLAGS: '--prefix=/dev/null' }
-      },
       headers: [
         {
           for: '/*',
