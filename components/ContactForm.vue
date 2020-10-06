@@ -39,7 +39,7 @@
         <textarea v-model="form.message" class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" :disabled="isDisable" />
       </div>
     </div>
-    <div class="md:flex md:items-center">
+    <div v-if="!isDisable" class="md:flex md:items-center">
       <div class="md:w-1/3">
         <TealButton @click="uploadFormData()">
           {{ $t('contact-page.form.send') }}
