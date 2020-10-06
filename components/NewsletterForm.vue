@@ -13,7 +13,7 @@
       <div class="flex flex-col mt-8 text-sm md:text-lg">
         <ValidationProvider v-slot="{ errors, valid }" name="email" rules="required|email" class="flex h-12 relative">
           <input v-model="form.email" type="email" class="flex-auto text-gray-500 px-3 py-2 rounded-lg hover:border-2 border focus:outline-none truncate mr-6" :placeholder="$t('newsletter.enter-email')">
-          <span class="absolute bottom-0 left-0 transform translate-y-8 text-sm text-red-600 p-2">{{ errors[0] }}</span>
+          <span class="absolute bottom-0 left-0 transform translate-y-8 text-sm italic text-red-600 p-2 ">{{ errors[0] }}</span>
           <TealButton :is-disable="!valid" @click="uploadFormData()">
             <Icon v-if="loading" class="iconify mr-2 -ml-1 animate-spin" icon="mdi:loading" />
             <Icon v-else icon="bx:bx-send" class="mr-2" />
