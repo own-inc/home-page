@@ -40,12 +40,11 @@
       </div>
     </div>
     <div v-if="!isDisable" class="md:flex md:items-center">
-      <div class="md:w-1/3">
-        <TealButton @click="uploadFormData()">
-          {{ $t('contact-page.form.send') }}
-        </TealButton>
-      </div>
-      <div class="md:w-2/3" />
+      <TealButton @click="uploadFormData()">
+        <Icon v-if="loading" class="iconify mr-2 -ml-1 animate-spin" icon="mdi:loading" />
+        <Icon v-else icon="bx:bx-send" class="mr-2" />
+        {{ $t('contact-page.form.send') }}
+      </TealButton>
     </div>
   </div>
 </template>
@@ -60,12 +59,15 @@ export default {
         message: ''
       },
       show: false,
-      isDisable: false
+      isDisable: false,
+      loading: false
     }
   },
   methods: {
     async uploadFormData () {
+      this.loading = true
       await this.$axios.$post('/form-api', this.form)
+      this.loading = false
       this.show = true
       this.isDisable = true
     }
