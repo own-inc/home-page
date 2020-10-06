@@ -43,7 +43,7 @@
         </p>
       </div>
     </ValidationProvider>
-    <TealButton v-if="!isDisable" :is-disable="!valid" @click="uploadFormData()">
+    <TealButton :is-disable="!valid || isDisable" @click="uploadFormData()">
       <Icon v-if="loading" class="iconify mr-2 -ml-1 animate-spin" icon="mdi:loading" />
       <Icon v-else icon="bx:bx-send" class="mr-2" />
       {{ $t('contact-page.form.send') }}
