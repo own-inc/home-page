@@ -1,5 +1,5 @@
 <template>
-  <ValidationObserver v-slot="{ valid }" class="w-full max-w-lg bg-white border-2 border-gray-100 shadow-lg p-6 rounded-lg z-20" tag="div">
+  <ValidationObserver v-slot="{ invalid }" class="w-full max-w-lg bg-white border-2 border-gray-100 shadow-lg p-6 rounded-lg z-20" tag="form" @submit.prevent="onSubmit()">
     <div v-if="show" class="flex flex-wrap mb-6">
       <div class="text-2xl font-semibold">
         {{ $t('contact-page.form.thanks') }}
@@ -43,7 +43,7 @@
         </p>
       </div>
     </ValidationProvider>
-    <TealButton v-if="!isDisable" :is-disable="!valid" @click="uploadFormData()">
+    <TealButton v-if="!isDisable" :is-disable="invalid" type="submit">
       <Icon v-if="loading" class="iconify mr-2 -ml-1 animate-spin" icon="mdi:loading" />
       <Icon v-else icon="bx:bx-send" class="mr-2" />
       {{ $t('contact-page.form.send') }}
@@ -67,7 +67,7 @@ export default Vue.extend({
     }
   },
   methods: {
-    async uploadFormData () {
+    async onSubmit () {
       this.loading = true
       await this.$axios.$post('/form-api/form-api-production-form', this.form)
       this.loading = false
