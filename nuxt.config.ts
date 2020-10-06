@@ -109,6 +109,9 @@ const config: NuxtConfig = {
     gzip: true,
     i18n: true
   },
+  axios: {
+    baseURL: process.env.URL || 'https://dev.own-auth.io'
+  },
   netlifyFiles: {
     netlifyToml: {
       build: {
