@@ -2,12 +2,11 @@
   <div class="w-full max-w-lg bg-white border-2 border-gray-100 shadow-lg p-6 rounded-lg z-20">
     <div v-if="show" class="flex flex-wrap mb-6">
       <div class="text-2xl font-semibold">
-        お問い合わせありがとうございました!
+        {{ $t('contact-page.form.thanks') }}
       </div>
-      <p class="mt-2">
-        以下の内容でお問い合わせを受付いたしました。
-        2営業日以内に担当よりご連絡致しますので今しばらくお待ちくださいませ。
-      </p>
+      <i18n path="contact-page.form.thanks-message" tag="p" class="mt-2">
+        <br place="br">
+      </i18n>
     </div>
     <div class="flex flex-wrap -mx-3 mb-6">
       <div class="w-full px-3">
@@ -58,7 +57,7 @@ export default {
         email: '',
         message: ''
       },
-      show: false,
+      show: true,
       isDisable: false,
       loading: false
     }

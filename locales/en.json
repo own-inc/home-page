@@ -96,7 +96,9 @@
       "email": "E-mail",
       "message": "Message",
       "require": "*Require",
-      "send": "Send"
+      "send": "Send",
+      "thanks": "Thank you for your inquiry!",
+      "thanks-message": "We have received inquiries with the following contents.{br}Please wait for a while as the person in charge will contact you within 2 business days."
     }
   },
   "newsletter": {
