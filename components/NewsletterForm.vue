@@ -43,10 +43,10 @@ export default Vue.extend({
     async uploadFormData () {
       this.loading = true
       await this.$axios.$post('/form-api/form-api-production-newsletter', this.form)
-      alert(this.$t('newsletter.thanks'))
       this.form.email = ''
       this.loading = false
       this.show = true
+      alert(this.$t('newsletter.thanks'))
     }
   }
 })
