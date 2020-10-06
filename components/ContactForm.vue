@@ -5,7 +5,9 @@
         {{ $t('contact-page.form.thanks') }}
       </div>
       <i18n path="contact-page.form.thanks-message" tag="p" class="mt-2">
-        <br place="br">
+        <template #br>
+          <br>
+        </template>
       </i18n>
     </div>
     <div class="flex flex-wrap -mx-3 mb-6">
