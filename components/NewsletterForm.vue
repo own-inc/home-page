@@ -13,11 +13,11 @@
       <div class="flex flex-col mt-8 text-sm md:text-lg">
         <div class="flex h-12 space-x-6">
           <input v-model="form.email" type="email" class="flex-auto text-gray-500 px-3 py-2 rounded-lg hover:border-2 border focus:outline-none truncate" :placeholder="$t('newsletter.enter-email')">
-          <TheButton @click="uploadFormData()">
+          <TealButton @click="uploadFormData()">
             <Icon v-if="loading" class="iconify mr-2 -ml-1 animate-spin" icon="mdi:loading" />
             <Icon v-else icon="bx:bx-send" class="mr-2" />
             {{ $t('newsletter.subscribe-btn') }}
-          </TheButton>
+          </TealButton>
         </div>
         <a href="#" class="text-xs self-end mt-4 text-gray-300 hover:text-gray-500">
           {{ $t('newsletter.privacy-policy') }}
