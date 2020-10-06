@@ -57,7 +57,7 @@ export default {
         email: '',
         message: ''
       },
-      show: true,
+      show: false,
       isDisable: false,
       loading: false
     }
