@@ -12,8 +12,8 @@
       </div>
       <div class="flex flex-col mt-8 text-sm md:text-lg">
         <div class="flex h-12 space-x-6">
-          <input type="email" class="flex-auto text-gray-500 px-3 py-2 rounded-lg hover:border-2 border focus:outline-none truncate" :placeholder="$t('newsletter.enter-email')">
-          <TheButton>
+          <input v-model="form.email" type="email" class="flex-auto text-gray-500 px-3 py-2 rounded-lg hover:border-2 border focus:outline-none truncate" :placeholder="$t('newsletter.enter-email')">
+          <TheButton @click="uploadFormData()">
             {{ $t('newsletter.subscribe-btn') }}
           </TheButton>
         </div>
@@ -25,10 +25,28 @@
   </div>
 </template>
 
-<script>
-export default {
-
-}
+<script lang="ts">
+import Vue from 'vue'
+export default Vue.extend({
+  data () {
+    return {
+      form: {
+        email: ''
+      },
+      show: false,
+      loading: false
+    }
+  },
+  methods: {
+    async uploadFormData () {
+      this.loading = true
+      await this.$axios.$post('/form-api/form-api-production-newsletter', this.form)
+      this.form.email = ''
+      this.loading = false
+      this.show = true
+    }
+  }
+})
 </script>
 
 <style>
