@@ -1,5 +1,5 @@
 <template>
-  <ValidationObserver v-slot="{ invalid }" class="w-full max-w-lg bg-white border-2 border-gray-100 shadow-lg p-6 rounded-lg z-20">
+  <ValidationObserver v-slot="{ valid }" class="w-full max-w-lg bg-white border-2 border-gray-100 shadow-lg p-6 rounded-lg z-20">
     <div v-if="show" class="flex flex-wrap mb-6">
       <div class="text-2xl font-semibold">
         {{ $t('contact-page.form.thanks') }}
@@ -44,7 +44,7 @@
       </ValidationProvider>
     </div>
     <div v-if="!isDisable" class="md:flex md:items-center">
-      <TealButton :is-disable="invalid" @click="uploadFormData()">
+      <TealButton :is-disable="!valid" @click="uploadFormData()">
         <Icon v-if="loading" class="iconify mr-2 -ml-1 animate-spin" icon="mdi:loading" />
         <Icon v-else icon="bx:bx-send" class="mr-2" />
         {{ $t('contact-page.form.send') }}
