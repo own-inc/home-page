@@ -14,8 +14,8 @@
   },
   "homepage": {
     "meta": {
-      "title": "Home",
-      "description": "We are a tech company that build Web application, Smartphone Apps, Corporate website or Landing page, we also run our own auth service OwN Auth."
+      "title": "ホーム",
+      "description": "私たち株式会社OwNは、Webアプリケーション、スマートフォンアプリ、企業Webサイト、またはランディングページを開発しています、他には自社開発の認証サービス「OwN Auth」を運営しています。"
     },
     "main": {
       "title": "技術で課題をブチ破る",
