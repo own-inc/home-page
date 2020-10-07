@@ -20,28 +20,31 @@ export default Vue.extend({
     const pathWithSlash = path.endsWith('/') ? path : `${path}/`
     const canonical = `${process.env.URL}${pathWithSlash}`
 
+    const title = this.$t('homepage.meta.title') as string
+    const description = this.$t('homepage.meta.description') as string
+
     return {
       htmlAttrs: i18nSeo.htmlAttrs,
       meta: [
         {
           hid: 'og:title',
           property: 'og:title',
-          content: this.$tc('homepage.meta.title')
+          content: title
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.$tc('homepage.meta.description')
+          content: description
         },
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: this.$tc('homepage.meta.title')
+          content: title
         },
         {
           hid: 'twitter:description',
           name: 'twitter:description',
-          content: this.$tc('homepage.meta.description')
+          content: description
         },
         ...i18nSeo.meta || []
       ],
