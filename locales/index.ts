@@ -47,7 +47,7 @@ export const dateTimeFormats = {
   },
   ja: {
     date: {
-      year: 'numeric', month: 'short', day: 'numeric'
+      year: 'numeric', month: '2-digit', day: '2-digit'
     },
     dateTime: {
       year: 'numeric',

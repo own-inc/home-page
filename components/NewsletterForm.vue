@@ -20,9 +20,9 @@
             {{ $t('newsletter.subscribe-btn') }}
           </TealButton>
         </ValidationProvider>
-        <a href="#" class="text-xs self-end mt-4 text-gray-300 hover:text-gray-500">
+        <nuxt-link :to="localePath({ name: 'privacy' })" href="#" class="text-xs self-end p-1 mt-2 text-gray-300 hover:text-gray-500">
           {{ $t('newsletter.privacy-policy') }}
-        </a>
+        </nuxt-link>
       </div>
     </div>
   </div>
