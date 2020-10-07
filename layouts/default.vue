@@ -27,6 +27,11 @@ export default Vue.extend({
       htmlAttrs: i18nSeo.htmlAttrs,
       meta: [
         {
+          hid: 'description',
+          name: 'description',
+          content: description
+        },
+        {
           hid: 'og:title',
           property: 'og:title',
           content: title
