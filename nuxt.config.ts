@@ -1,6 +1,8 @@
 import { NuxtConfig } from '@nuxt/types'
 import i18n from './nuxt-i18n.config'
 
+const siteURL = process.env.URL || 'https://dev.own-auth.io'
+
 const config: NuxtConfig = {
   target: 'static',
   head: {
@@ -16,17 +18,17 @@ const config: NuxtConfig = {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: process.env.URL || 'https://dev.own-auth.io'
+        content: siteURL
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: `${process.env.URL || 'https://dev.own-auth.io'}/own-card.png`
+        content: `${siteURL}/own-card.png`
       },
       {
         hid: 'og:image:secure_url',
         property: 'og:image:secure_url',
-        content: `${process.env.URL || 'https://dev.own-auth.io'}/own-card.png`
+        content: `${siteURL}/own-card.png`
       },
       {
         hid: 'og:image:alt',
@@ -42,7 +44,7 @@ const config: NuxtConfig = {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: `${process.env.URL || 'https://dev.own-auth.io'}/own-card.png`
+        content: `${siteURL}/own-card.png`
       }
     ],
     link: [
@@ -60,7 +62,8 @@ const config: NuxtConfig = {
     '@nuxtjs/svg',
     '@nuxtjs/tailwindcss',
     'nuxt-purge-icons-module',
-    '@nuxtjs/netlify-files'
+    '@nuxtjs/netlify-files',
+    '@nuxtjs/google-analytics'
   ],
   modules: [
     '@nuxt/content',
@@ -70,7 +73,7 @@ const config: NuxtConfig = {
   ],
   env: {
     DEPLOY_PRIME_URL: process.env.DEPLOY_PRIME_URL || 'https://dev.own-auth.io',
-    URL: process.env.URL || 'https://dev.own-auth.io'
+    URL: siteURL
   },
   content: {
     markdown: {
@@ -110,12 +113,16 @@ const config: NuxtConfig = {
     trailingSlash: true
   },
   sitemap: {
-    hostname: process.env.URL || 'https://dev.own-auth.io',
+    hostname: siteURL,
     gzip: true,
     i18n: true
   },
   axios: {
-    baseURL: process.env.URL || 'https://dev.own-auth.io'
+    baseURL: siteURL
+  },
+  googleAnalytics: {
+    dev: false,
+    id: process.env.GOOGLE_ANALYTICS_ID
   },
   netlifyFiles: {
     netlifyToml: {
