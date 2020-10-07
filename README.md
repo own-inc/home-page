@@ -9,7 +9,7 @@
 $ npm i -g pnpm
 
 # install dependencies
-$ pnpm i --shamefully-hoist
+$ pnpm i
 
 # serve with hot reload at localhost:3000
 $ pnpm dev
@@ -20,6 +20,7 @@ $ pnpm start
 
 # generate static project
 $ pnpm generate
+$ pnpm start
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
