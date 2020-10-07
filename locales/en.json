@@ -101,12 +101,15 @@
       "thanks-message": "We have received inquiries with the following contents.{br}Please wait for a while as the person in charge will contact you within 2 business days."
     }
   },
+  "privacy-page": {
+    "go-back": "Go back to the previous page"
+  },
   "newsletter": {
     "title": "OwN Newsletter",
     "subtitle": "Subscribe to the OwN newsletter for exclusive information!",
     "enter-email": "Please enter your Email address",
     "subscribe-btn": "Subscribe now",
-    "privacy-policy": "Terms of Use, Privacy Policy.",
+    "privacy-policy": "Privacy Policy",
     "thanks": "Thank you for subscribing to the newsletter!"
   }
 }

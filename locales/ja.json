@@ -101,12 +101,15 @@
       "thanks-message": "以下の内容でお問い合わせを受付いたしました。{br}2営業日以内に担当よりご連絡致しますので今しばらくお待ちくださいませ。"
     }
   },
+  "privacy-page": {
+    "go-back": "前のページに戻る"
+  },
   "newsletter": {
     "title": "OwN Newsletter",
     "subtitle": "OwNのニュースレターを購読して限定情報を手に入れましょう！",
     "enter-email": "E-Mailアドレスを入力してください",
     "subscribe-btn": "すぐに購読",
-    "privacy-policy": "利用規約・プライバシーポリシー",
+    "privacy-policy": "プライバシーポリシー",
     "thanks": "ニュースレターを購読していただき、ありがとうございます！"
   }
 }
