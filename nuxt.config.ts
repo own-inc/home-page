@@ -69,7 +69,8 @@ const config: NuxtConfig = {
     '@nuxt/content',
     ['nuxt-i18n', i18n],
     '@nuxtjs/axios',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots'
   ],
   env: {
     DEPLOY_PRIME_URL: process.env.DEPLOY_PRIME_URL || 'https://dev.own-auth.io',
@@ -116,6 +117,9 @@ const config: NuxtConfig = {
     hostname: siteURL,
     gzip: true,
     i18n: true
+  },
+  robots: {
+    Sitemap: `${siteURL}/sitemap.xml`
   },
   axios: {
     baseURL: siteURL
