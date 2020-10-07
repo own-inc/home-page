@@ -16,6 +16,7 @@ devDependencies:
   '@nuxtjs/eslint-config': 3.1.0_eslint@7.10.0+typescript@4.0.3
   '@nuxtjs/eslint-config-typescript': 2.0.0_eslint@7.10.0+typescript@4.0.3
   '@nuxtjs/eslint-module': 2.0.0_eslint@7.10.0
+  '@nuxtjs/google-analytics': 2.4.0
   '@nuxtjs/netlify-files': 1.2.0
   '@nuxtjs/svg': 0.1.12
   '@nuxtjs/tailwindcss': 3.1.0
@@ -1550,6 +1551,12 @@ packages:
       eslint: '>=6'
     resolution:
       integrity: sha512-uL3prMRwSBcxy583O11nMiUtfA2fxF7lZgCCUCsq4FNCqv320euJ7XE3KNZT6IVs/QJ1vaUNLC8tL4SZS99Tjw==
+  /@nuxtjs/google-analytics/2.4.0:
+    dependencies:
+      vue-analytics: 5.22.1
+    dev: true
+    resolution:
+      integrity: sha512-rDQTwHIjyjVrx8GywHPuWykJ3jRFGaHl5Iqji/y8tQWUc0yGEeHxOoR0yimzxnTS1Ph2/PubQYpgnVeEPEdL/A==
   /@nuxtjs/netlify-files/1.2.0:
     dependencies:
       '@iarna/toml': 2.2.5
@@ -10258,6 +10265,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
+  /vue-analytics/5.22.1:
+    dev: true
+    resolution:
+      integrity: sha512-HPKQMN7gfcUqS5SxoO0VxqLRRSPkG1H1FqglsHccz6BatBatNtm/Vyy8brApktZxNCfnAkrSVDpxg3/FNDeOgQ==
   /vue-client-only/2.0.0:
     dev: false
     resolution:
@@ -10723,6 +10734,7 @@ specifiers:
   '@nuxtjs/eslint-config': ^3.1.0
   '@nuxtjs/eslint-config-typescript': ^2.0.0
   '@nuxtjs/eslint-module': ^2.0.0
+  '@nuxtjs/google-analytics': ^2.4.0
   '@nuxtjs/netlify-files': ^1.2.0
   '@nuxtjs/sitemap': ^2.4.0
   '@nuxtjs/svg': ^0.1.12
