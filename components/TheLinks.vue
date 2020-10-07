@@ -1,18 +1,19 @@
 <template>
-  <aside class="hidden md:flex fixed inset-y-0 right-0 z-40 flex-col pr-8 justify-center h-full space-y-8 text-4xl">
-    <a class="hover:text-teal-300" href="https://github.com/own-inc" target="_blank">
+  <aside class="hidden md:flex fixed inset-y-0 right-0 z-40 flex-col pr-6 justify-center h-full space-y-4 text-4xl">
+    <a class="hover:text-teal-300 p-2" href="https://github.com/own-inc" target="_blank">
       <Icon icon="bx:bxl-github" />
     </a>
-    <a class="hover:text-teal-300" href="https://twitter.com/own_id" target="_blank">
+    <a class="hover:text-teal-300 p-2" href="https://twitter.com/own_id" target="_blank">
       <Icon icon="bx:bxl-twitter" />
     </a>
-    <nuxt-link class="hover:text-teal-300" :to="localePath('/contact/')">
+    <nuxt-link class="hover:text-teal-300 p-2" :to="localePath('/contact/')">
       <Icon icon="bx:bx-mail-send" />
     </nuxt-link>
     <nuxt-link
       v-for="locale in availableLocales"
       :key="locale.code"
       :to="switchLocalePath(locale.code)"
+      class="p-2"
     >
       <Icon icon="clarity:language-line" />
     </nuxt-link>
