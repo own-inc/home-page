@@ -1,11 +1,13 @@
 ---
-title: オフィシャルサイトの初公開
-description: Learn how to use @nuxt/content.
+title: オフィシャルサイト公開
+description: 株式会社OwNの公式ウェブサイトの公開.
 type: お知らせ
 ---
 
-# Lorem ipsum
-## dolor—sit—amet
-### consectetur &amp; adipisicing
-#### elit
-##### elit
+平素は別格のお引き立てを賜り誠にありがとうございます。
+
+この度、株式会社OwNオフィシャルサイト(https://own-auth.io/) を公開させていただきました。
+
+今後ともご愛顧のほどよろしくお願いいたします。
+
+代表：粕尾 拓未
