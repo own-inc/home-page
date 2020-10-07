@@ -55,6 +55,16 @@ export default Vue.extend({
       ],
       link: [
         { rel: 'canonical', href: canonical },
+        {
+          rel: 'alternate',
+          hreflang: 'ja',
+          href: `${process.env.URL}${pathWithSlash}`
+        },
+        {
+          rel: 'alternate',
+          hreflang: 'en',
+          href: `${process.env.URL}${pathWithSlash}`
+        },
         ...i18nSeo.link || []
       ]
     }
