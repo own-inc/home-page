@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="mt-16 w-1/2 md:w-2/5 self-end">
-      <img src="~/assets/image/bro.svg" alt="" class="w-full animate__animated animate__fadeIn">
+      <img src="~/assets/image/bro.svg" alt="Javascript frameworks" class="w-full animate__animated animate__fadeIn">
     </div>
   </section>
 </template>
