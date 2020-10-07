@@ -14,19 +14,17 @@
             </button>
           </div>
           <laptop-nav :nav-items="navItems" />
-          <div class="hidden md:flex items-center justify-end space-x-8 md:flex-1">
+          <div v-if="showLogin" class="hidden md:flex items-center justify-end space-x-8 md:flex-1">
             <a href="#" class="whitespace-no-wrap text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900">
               {{ $t('header.auth.sign-in') }}
             </a>
-            <span class="inline-flex rounded-md shadow-sm">
-              <TealButton>
-                {{ $t('header.auth.sign-up') }}
-              </TealButton>
-            </span>
+            <TealButton>
+              {{ $t('header.auth.sign-up') }}
+            </TealButton>
           </div>
         </div>
       </div>
-      <mobile-nav v-show="showMenu" :nav-items="navItems" />
+      <mobile-nav v-show="showMenu" :nav-items="navItems" :show-login="showLogin" />
     </div>
   </header>
 </template>
@@ -37,7 +35,8 @@ import Vue from 'vue'
 export default Vue.extend({
   data () {
     return {
-      showMenu: false
+      showMenu: false,
+      showLogin: false
     }
   },
   computed: {
