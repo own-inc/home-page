@@ -11,7 +11,7 @@ localize({
 
 for (const [rule, validation] of Object.entries(rules)) {
   extend(rule, {
-    ...validation
+    ...validation as any
   })
 }
 
