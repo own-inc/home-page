@@ -14,21 +14,21 @@
     "build:netlify": "npx pnpm install -r --store=node_modules/.pnpm-store && npx pnpm generate"
   },
   "dependencies": {
-    "@iconify/iconify": "^2.0.0-rc.2",
-    "@nuxt/content": "^1.10.0",
+    "@iconify/iconify": "^2.0.0-rc.5",
+    "@nuxt/content": "^1.11.1",
     "@nuxt/typescript-runtime": "^0.4.10",
-    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/axios": "^5.12.4",
     "@nuxtjs/robots": "^2.4.2",
     "@nuxtjs/sitemap": "^2.4.0",
     "@tailwindcss/typography": "^0.2.0",
-    "nuxt": "^2.14.7",
-    "nuxt-i18n": "^6.15.4",
+    "nuxt": "^2.14.12",
+    "nuxt-i18n": "^6.16.0",
     "prism-themes": "^1.5.0",
     "tailwindcss-animatecss": "^1.0.7",
-    "vee-validate": "^3.4.4"
+    "vee-validate": "^3.4.5"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.14.7",
+    "@nuxt/types": "^2.14.12",
     "@nuxt/typescript-build": "^2.0.3",
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-config-typescript": "^2.0.0",
@@ -36,11 +36,11 @@
     "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/netlify-files": "^1.2.0",
     "@nuxtjs/svg": "^0.1.12",
-    "@nuxtjs/tailwindcss": "^3.2.0",
+    "@nuxtjs/tailwindcss": "^3.4.2",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.13.0",
+    "eslint": "^7.17.0",
     "eslint-plugin-nuxt": "^1.0.0",
     "nuxt-purge-icons-module": "^0.4.5",
-    "typescript": "^4.0.5"
+    "typescript": "^4.1.3"
   }
 }
