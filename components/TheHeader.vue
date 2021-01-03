@@ -1,21 +1,21 @@
 <template>
   <header class="fixed inset-x-0 top-0 z-50 layer-blur">
     <div class="relative">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:space-x-10">
+      <div class="px-4 mx-auto max-w-7xl sm:px-6">
+        <div class="flex items-center justify-between py-6 border-b-2 border-gray-100 md:space-x-10">
           <div>
             <logo />
           </div>
-          <div class="-mr-2 -my-2 md:hidden">
-            <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" @click.stop="showMenu = !showMenu">
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div class="-my-2 -mr-2 md:hidden">
+            <button type="button" class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500" @click.stop="showMenu = !showMenu">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
           </div>
           <laptop-nav :nav-items="navItems" />
-          <div v-if="showLogin" class="hidden md:flex items-center justify-end space-x-8 md:flex-1">
-            <a href="#" class="whitespace-no-wrap text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900">
+          <div v-if="showLogin" class="items-center justify-end hidden space-x-8 md:flex md:flex-1">
+            <a href="#" class="text-base font-medium leading-6 text-gray-500 whitespace-no-wrap hover:text-gray-900 focus:outline-none focus:text-gray-900">
               {{ $t('header.auth.sign-in') }}
             </a>
             <TealButton>
@@ -42,11 +42,6 @@ export default Vue.extend({
   computed: {
     navItems () {
       return [
-        {
-          title: this.$t('header.nav.services'),
-          link: { name: 'services' },
-          icon: 'bx:bxl-dev-to'
-        },
         {
           title: this.$t('header.nav.news'),
           link: { name: 'news' },
