@@ -6,14 +6,14 @@ const siteURL = process.env.URL || 'https://dev.own-auth.io'
 const config: NuxtConfig = {
   target: 'static',
   head: {
-    titleTemplate: c => c ? `${c} | OwN Inc.` : 'OwN Inc. - own-auth.io',
+    titleTemplate: c => c ? `${c} | 株式会社OwN` : '株式会社OwN - own-auth.io',
     htmlAttrs: {
       prefix: 'og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'og:site_name', property: 'og:site_name', content: 'OwN Inc.' },
+      { hid: 'og:site_name', property: 'og:site_name', content: '株式会社OwN' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
         hid: 'og:url',
@@ -33,7 +33,7 @@ const config: NuxtConfig = {
       {
         hid: 'og:image:alt',
         property: 'og:image:alt',
-        content: 'OwN Inc.'
+        content: '株式会社OwN'
       },
       { hid: 'twitter:site', name: 'twitter:site', content: '@own_id' },
       {
