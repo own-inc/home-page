@@ -21,7 +21,7 @@ Vue.component('ValidationObserver', ValidationObserver)
 
 const validate: Plugin = ({ app }) => {
   localize(app.i18n.locale)
-  app.i18n.onLanguageSwitched = (_oldLocale: string, newLocale: string) => {
+  app.i18n.onLanguageSwitched = (_oldLocale, newLocale) => {
     localize(newLocale)
   }
 }
