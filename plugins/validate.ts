@@ -1,3 +1,4 @@
+import { Plugin } from '@nuxt/types'
 import Vue from 'vue'
 import { ValidationProvider, ValidationObserver, extend, localize } from 'vee-validate'
 import * as rules from 'vee-validate/dist/rules'
@@ -11,17 +12,18 @@ localize({
 
 for (const [rule, validation] of Object.entries(rules)) {
   extend(rule, {
-    ...validation as any
+    ...validation
   })
 }
 
 Vue.component('ValidationProvider', ValidationProvider)
 Vue.component('ValidationObserver', ValidationObserver)
 
-// @ts-ignore
-export default function ({ app }) {
+const validate: Plugin = ({ app }) => {
   localize(app.i18n.locale)
   app.i18n.onLanguageSwitched = (_oldLocale: string, newLocale: string) => {
     localize(newLocale)
   }
 }
+
+export default validate
