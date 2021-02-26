@@ -1,6 +1,7 @@
 {
   "header": {
     "nav": {
+      "home": "Home",
       "services": "Services",
       "news": "News",
       "about": "About",

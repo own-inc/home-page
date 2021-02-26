@@ -1,6 +1,6 @@
 <template>
-  <page-contant :title="$t('news-page.title')" class="px-4 pb-12 min-h-screen">
-    <news-list :news="news" class="animate__animated animate__fadeIn" />
+  <page-contant :title="$t('news-page.title')" class="min-h-screen px-4 pb-12">
+    <ListNews :news="news" class="animate__animated animate__fadeIn" />
   </page-contant>
 </template>
 

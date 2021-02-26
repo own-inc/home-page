@@ -1,6 +1,7 @@
 {
   "header": {
     "nav": {
+      "home": "ホーム",
       "services": "サービス",
       "news": "ニュース",
       "about": "会社情報",

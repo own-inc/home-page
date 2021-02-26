@@ -1,8 +1,8 @@
 <template>
   <nav class="hidden md:flex px-4">
-    <nuxt-link v-for="item in navItems" :key="item.title" :to="localePath(item.link)" class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150 py-2 px-6">
+    <NuxtLink v-for="item in navItems" :key="item.title" :to="localePath(item.link)" class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150 py-2 px-6">
       {{ item.title }}
-    </nuxt-link>
+    </NuxtLink>
   </nav>
 </template>
 

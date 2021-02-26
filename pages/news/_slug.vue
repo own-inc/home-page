@@ -1,15 +1,15 @@
 <template>
-  <div class="container lg:max-w-4xl mx-auto py-6 md:py-12 min-h-screen px-4">
-    <nuxt-link :to="localePath({ name: 'news' })" class="inline-flex items-center space-x-2 text-gray-600 hover:text-gray-900">
+  <div class="container min-h-screen px-4 py-6 mx-auto lg:max-w-4xl md:py-12">
+    <NuxtLink :to="localePath({ name: 'news' })" class="inline-flex items-center space-x-2 text-gray-600 hover:text-gray-900">
       <Icon icon="bx:bx-arrow-back" />
       <p>{{ $t('news-page.news.go-back') }}</p>
-    </nuxt-link>
-    <h1 class="text-2xl md:text-4xl text-teal-500 mt-4 md:mt-8">
+    </NuxtLink>
+    <h1 class="mt-4 text-2xl text-teal-500 md:text-4xl md:mt-8">
       {{ news.title }}
     </h1>
     <div class="mt-4 md:mt-8">
       <NuxtContent
-        class="prose prose-sm sm:prose lg:prose-lg"
+        class="prose-sm prose sm:prose lg:prose-lg"
         :document="news"
       />
     </div>

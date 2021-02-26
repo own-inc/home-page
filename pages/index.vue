@@ -62,7 +62,7 @@
             {{ $t('services-page.dev-services.title') }}
           </h2>
         </div>
-        <services-list :services="devServices" />
+        <ListServices :services="devServices" />
       </div>
       <div class="flex flex-col items-center pb-20">
         <div class="mb-4">
@@ -79,9 +79,9 @@
           </svg>
         </div>
         <div class="flex-shrink-0">
-          <nuxt-link :to="localePath('/contact/')" class="px-5 py-3 text-base text-white whitespace-no-wrap bg-teal-400 rounded-md bg-none hover:bg-teal-300 focus:outline-none md:text-lg">
+          <NuxtLink :to="localePath('/contact/')" class="px-5 py-3 text-base text-white whitespace-no-wrap bg-teal-400 rounded-md bg-none hover:bg-teal-300 focus:outline-none md:text-lg">
             {{ $t('services-page.dev-services.btn.contact') }}
-          </nuxt-link>
+          </NuxtLink>
         </div>
       </div>
     </section>
