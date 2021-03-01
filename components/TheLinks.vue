@@ -6,17 +6,17 @@
     <a class="hover:text-teal-300 p-2" href="https://twitter.com/own_id" target="_blank">
       <Icon icon="bx:bxl-twitter" />
     </a>
-    <nuxt-link class="hover:text-teal-300 p-2" :to="localePath('/contact/')">
+    <NuxtLink class="hover:text-teal-300 p-2" :to="localePath('/contact/')">
       <Icon icon="bx:bx-mail-send" />
-    </nuxt-link>
-    <nuxt-link
+    </NuxtLink>
+    <NuxtLink
       v-for="locale in availableLocales"
       :key="locale.code"
       :to="switchLocalePath(locale.code)"
       class="p-2"
     >
       <Icon icon="clarity:language-line" />
-    </nuxt-link>
+    </NuxtLink>
   </aside>
 </template>
 

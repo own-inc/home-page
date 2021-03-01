@@ -5,14 +5,14 @@
       <p class="font-medium text-sm md:text-base">
         Copiright © 2020 OwN. All rights reserved.
       </p>
-      <nuxt-link
+      <NuxtLink
         v-for="locale in availableLocales"
         :key="locale.code"
         :to="switchLocalePath(locale.code)"
         class="block md:hidden"
       >
         <Icon icon="clarity:language-line" class="text-4xl" />
-      </nuxt-link>
+      </NuxtLink>
     </div>
   </footer>
 </template>

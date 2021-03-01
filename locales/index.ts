@@ -1,3 +1,4 @@
+import { DateTimeFormats } from 'vue-i18n'
 import en from './en.json'
 import ja from './ja.json'
 
@@ -31,7 +32,7 @@ export const locales: Array<locale> = [
   }
 ]
 
-export const dateTimeFormats = {
+export const dateTimeFormats: DateTimeFormats = {
   en: {
     date: {
       year: 'numeric', month: 'short', day: 'numeric'

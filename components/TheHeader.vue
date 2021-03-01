@@ -13,7 +13,7 @@
               </svg>
             </button>
           </div>
-          <laptop-nav :nav-items="navItems" />
+          <NavLaptop :nav-items="navItems" />
           <div v-if="showLogin" class="items-center justify-end hidden space-x-8 md:flex md:flex-1">
             <a href="#" class="text-base font-medium leading-6 text-gray-500 whitespace-no-wrap hover:text-gray-900 focus:outline-none focus:text-gray-900">
               {{ $t('header.auth.sign-in') }}
@@ -24,7 +24,7 @@
           </div>
         </div>
       </div>
-      <mobile-nav v-show="showMenu" :nav-items="navItems" :show-login="showLogin" />
+      <NavMobile v-show="showMenu" :nav-items="navItems" :show-login="showLogin" />
     </div>
   </header>
 </template>
@@ -42,6 +42,11 @@ export default Vue.extend({
   computed: {
     navItems () {
       return [
+        {
+          title: this.$t('header.nav.home'),
+          link: { name: 'index' },
+          icon: 'bx:bx-home'
+        },
         {
           title: this.$t('header.nav.news'),
           link: { name: 'news' },

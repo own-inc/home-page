@@ -10,7 +10,7 @@
         </h2>
         <div class="inline-flex items-center mt-8 animate__animated animate__fadeIn">
           <div class="w-8 h-px mr-4 bg-black" />
-          <a href="#" class="inline-flex items-center text-2xl hover:text-teal-300">
+          <a href="#service" class="inline-flex items-center text-2xl hover:text-teal-300">
             <Icon icon="bx:bx-link" class="mr-4 text-3xl" />
             <span class="border-b-2">
               {{ $t('homepage.main.checkService') }}
@@ -25,7 +25,9 @@
     <section class="container flex-col items-center mx-auto space-y-24 text-base md:space-y-32 animate__animated animate__fadeIn">
       <div class="flex flex-col space-y-6 md:space-y-12">
         <div class="text-4xl font-bold text-center text-transparent md:text-5xl bg-clip-text bg-gradient-to-r from-teal-400 to-purple-500">
-          <h2>{{ $t('services-page.title') }}</h2>
+          <h2 id="service">
+            {{ $t('services-page.title') }}
+          </h2>
         </div>
         <div class="text-center">
           <h3>
@@ -62,7 +64,7 @@
             {{ $t('services-page.dev-services.title') }}
           </h2>
         </div>
-        <services-list :services="devServices" />
+        <ListServices :services="devServices" />
       </div>
       <div class="flex flex-col items-center pb-20">
         <div class="mb-4">
@@ -79,9 +81,9 @@
           </svg>
         </div>
         <div class="flex-shrink-0">
-          <nuxt-link :to="localePath('/contact/')" class="px-5 py-3 text-base text-white whitespace-no-wrap bg-teal-400 rounded-md bg-none hover:bg-teal-300 focus:outline-none md:text-lg">
+          <NuxtLink :to="localePath('/contact/')" class="px-5 py-3 text-base text-white whitespace-no-wrap bg-teal-400 rounded-md bg-none hover:bg-teal-300 focus:outline-none md:text-lg">
             {{ $t('services-page.dev-services.btn.contact') }}
-          </nuxt-link>
+          </NuxtLink>
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 <template>
-  <nuxt-link :to="localePath(to)" :class="$attrs.class">
+  <NuxtLink :to="localePath(to)" :class="$attrs.class">
     <img class="h-6 w-auto sm:h-8" src="~/assets/logo.svg" alt="OwN Logo">
-  </nuxt-link>
+  </NuxtLink>
 </template>
 
 <script lang="ts">

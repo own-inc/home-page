@@ -6,9 +6,9 @@
     <h1 v-else class="text-3xl font-bold">
       An error occurred
     </h1>
-    <nuxt-link class="btn-bk mt-16" to="/">
+    <NuxtLink class="btn-bk mt-16" to="/">
       Home page
-    </nuxt-link>
+    </NuxtLink>
   </div>
 </template>
 
