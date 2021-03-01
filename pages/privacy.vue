@@ -1,15 +1,15 @@
 <template>
-  <div class="container lg:max-w-4xl mx-auto py-6 md:py-12 min-h-screen px-4">
+  <div class="container min-h-screen px-4 py-6 mx-auto lg:max-w-4xl md:py-12">
     <a href="#" class="inline-flex items-center space-x-2 text-gray-600 hover:text-gray-900" @click.prevent="goBack()">
       <Icon icon="bx:bx-arrow-back" />
       <p>{{ $t('privacy-page.go-back') }}</p>
     </a>
-    <h1 class="text-2xl md:text-4xl text-teal-500 mt-4 md:mt-8">
+    <h1 class="mt-4 text-2xl text-teal-500 md:text-4xl md:mt-8">
       {{ news.title }}
     </h1>
     <div class="mt-4 md:mt-8">
       <NuxtContent
-        class="prose prose-sm sm:prose lg:prose-lg"
+        class="prose-sm prose sm:prose lg:prose-lg"
         :document="news"
       />
     </div>
@@ -35,13 +35,6 @@ export default Vue.extend({
       news
     }
   },
-  methods: {
-    goBack () {
-      window.history.length > 1
-        ? this.$router.go(-1)
-        : this.$router.push('/')
-    }
-  },
   head (): MetaInfo {
     const title = (this as any).news.title
     const description = (this as any).news.description
@@ -57,6 +50,13 @@ export default Vue.extend({
         { hid: 'twitter:title', name: 'twitter:title', content: title },
         { hid: 'twitter:description', name: 'twitter:description', content: description }
       ]
+    }
+  },
+  methods: {
+    goBack () {
+      window.history.length > 1
+        ? this.$router.go(-1)
+        : this.$router.push('/')
     }
   }
 })
