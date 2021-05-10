@@ -27,8 +27,8 @@
   "services-page": {
     "title": "サービス",
     "login-service": {
-      "title": "OwN Social Login Service",
-      "subtitle": "全てのアカウントを一つにまとめる",
+      "title": "OwN Auth",
+      "subtitle": "ユーザー認証・認可に特化したIDaaS",
       "content": {
         "1": "SNS連携したサービスを使う時、",
         "2": "「あれ、どのアカウントでログインしてたっけ？」",

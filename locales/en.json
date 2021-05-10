@@ -27,8 +27,8 @@
   "services-page": {
     "title": "Services",
     "login-service": {
-      "title": "OwN Social Login Service",
-      "subtitle": "Combine all accounts into one.",
+      "title": "OwN Auth",
+      "subtitle": "IDaaS specializing in user AuthZ and AuthN.",
       "content": {
         "1": "When using services linked to SNS,",
         "2": "\"Which account did I log in with ?\"",
